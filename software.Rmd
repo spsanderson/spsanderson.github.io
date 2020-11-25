@@ -14,22 +14,27 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+# Software Projects
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+## {healthyR}
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+> healthyR: A toolkit for hospital data
 
-```{r cars}
-summary(cars)
-```
+### The Beginning
 
-## Including Plots
+The beginning of `healthyR` started from an idea that popped into my head while
+at work. I was looking for a way to democratize the gathering of and visualization 
+of data in both the administrative and clinical sense. This led me to build out
+`LICHospitalR` a package for my employer that is under active development just like 
+`healthyR`
 
-You can also embed plots, for example:
+## {healthyR.data}
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+> healthyR.data: A companion data only package to `healthyR`
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+<!-- badges: start -->
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/healthyR.data)](https://cran.r-project.org/package=healthyR.data)
+![](http://cranlogs.r-pkg.org/badges/healthyR.data?color=brightgreen)
+![](http://cranlogs.r-pkg.org/badges/grand-total/healthyR.data?color=brightgreen)
+[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
+<!-- badges: end -->
