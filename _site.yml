@@ -1,0 +1,19 @@
+name: "Steven P. Sanderson II, MPH"
+output_dir: "."
+navbar:
+  title: "Steven P. Sanderson II, MPH"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Programming"
+      href: software.html
+  right:
+    - icon: fa-envelope fa-lg
+      href: contact.html
+    - icon: fa-github fa-lg
+      href: http://github.com/spsanderson
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/spsanderson
+output:
+  html_document:
+    theme: flatly
