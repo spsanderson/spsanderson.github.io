@@ -8,6 +8,8 @@ output:
     highlight: tango
     theme: flatly
     toc: yes
+    includes:
+      in_header: GA_Script.html
 ---
 
 ```{r setup, include=FALSE}
