@@ -28,7 +28,7 @@ The beginning of `healthyR` started from an idea that popped into my head while
 at work. I was looking for a way to democratize the gathering of and visualization 
 of data in both the administrative and clinical sense. This led me to build out
 `LICHospitalR` a package for my employer that is under active development just like 
-`healthyR`
+`healthyR`. `healthyR` can be found [here](https://www.spsanderson.com/healthyR)
 
 ## {healthyR.data}
 
@@ -40,3 +40,5 @@ of data in both the administrative and clinical sense. This led me to build out
 ![](http://cranlogs.r-pkg.org/badges/grand-total/healthyR.data?color=brightgreen)
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 <!-- badges: end -->
+
+`healthyR.data` can be found [here](https://www.spsanderson.com/healthyR.data)
