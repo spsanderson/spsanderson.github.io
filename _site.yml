@@ -2,6 +2,7 @@ name: "Steven P. Sanderson II, MPH"
 output_dir: "."
 navbar:
   title: "Steven P. Sanderson II, MPH"
+  google_analytics: "G-QW2ZT6KK9V"
   left:
     - text: "Home"
       href: index.html
