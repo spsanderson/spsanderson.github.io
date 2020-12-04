@@ -22,6 +22,13 @@ knitr::opts_chunk$set(echo = TRUE)
 
 > healthyR: A toolkit for hospital data
 
+<!-- badges: start -->
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/healthyR)](https://cran.r-project.org/package=healthyR)
+![](https://cranlogs.r-pkg.org/badges/healthyR)
+![](https://cranlogs.r-pkg.org/badges/grand-total/healthyR)
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+<!-- badges: end -->
+
 ### The Beginning
 
 The beginning of `healthyR` started from an idea that popped into my head while
