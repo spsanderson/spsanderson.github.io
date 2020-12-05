@@ -16,4 +16,6 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# More to follow
+# Welcome!
+
+> __This site built with R__
