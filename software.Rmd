@@ -55,5 +55,5 @@ of data in both the administrative and clinical sense. This led me to build out
 > __healthyR.ts:__ A time-series analysis and modeling verb framework to `healthyR`
 
 <!-- badges: start -->
-[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
