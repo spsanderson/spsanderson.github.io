@@ -57,3 +57,5 @@ of data in both the administrative and clinical sense. This led me to build out
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
+
+`healthyR.ts` can be found [here](https://www.spsanderson.com/healthyR.ts)
