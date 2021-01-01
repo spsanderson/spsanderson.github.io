@@ -6,7 +6,7 @@ navbar:
   left:
     - text: "Home"
       href: index.html
-    - text: "Programming"
+    - text: "Software"
       href: software.html
   right:
     - icon: fa-envelope fa-lg
