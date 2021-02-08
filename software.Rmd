@@ -26,7 +26,7 @@ knitr::opts_chunk$set(echo = TRUE)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/healthyR)](https://cran.r-project.org/package=healthyR)
 ![](https://cranlogs.r-pkg.org/badges/healthyR)
 ![](https://cranlogs.r-pkg.org/badges/grand-total/healthyR)
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html##experimental)
 <!-- badges: end -->
 
 ### The Beginning
@@ -45,7 +45,7 @@ of data in both the administrative and clinical sense. This led me to build out
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/healthyR.data)](https://cran.r-project.org/package=healthyR.data)
 ![](http://cranlogs.r-pkg.org/badges/healthyR.data)
 ![](http://cranlogs.r-pkg.org/badges/grand-total/healthyR.data)
-[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
+[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html##stable)
 <!-- badges: end -->
 
 `healthyR.data` can be found [here](https://www.spsanderson.com/healthyR.data)
@@ -58,7 +58,7 @@ of data in both the administrative and clinical sense. This led me to build out
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/healthyR)](https://cran.r-project.org/package=healthyR.ts)
 ![](https://cranlogs.r-pkg.org/badges/healthyR.ts)
 ![](https://cranlogs.r-pkg.org/badges/grand-total/healthyR.ts)
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#/#experimental)
 <!-- badges: end -->
 
 `healthyR.ts` can be found [here](https://www.spsanderson.com/healthyR.ts)
