@@ -26,7 +26,7 @@ knitr::opts_chunk$set(echo = TRUE)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/healthyverse)](https://cran.r-project.org/package=healthyverse)
 ![](https://cranlogs.r-pkg.org/badges/healthyverse)
 ![](https://cranlogs.r-pkg.org/badges/grand-total/healthyverse)
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html##stable)
+[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html##stable)
 <!-- badges: end -->
 
 This package is not yet avilable on CRAN but it has been submitted. The intent of this library
