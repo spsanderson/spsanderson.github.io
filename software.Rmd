@@ -21,12 +21,9 @@ __Software Projects__
 
 __healthyverse:__ Easily install and load all healthyR packages
 
-<!-- badges: start -->
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/healthyverse)](https://cran.r-project.org/package=healthyverse)
-![](https://cranlogs.r-pkg.org/badges/healthyverse)
-![](https://cranlogs.r-pkg.org/badges/grand-total/healthyverse)
-[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html##stable)
-<!-- badges: end -->
+CRAN Version | Monthly Downloads | Total Downloads | Lifecycle Status
+-------------|-------------------|-----------------|-----------------
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/healthyverse)](https://cran.r-project.org/package=healthyverse) | ![](https://cranlogs.r-pkg.org/badges/healthyverse) | ![](https://cranlogs.r-pkg.org/badges/grand-total/healthyverse) | [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html##stable)
 
 Purpose
 
@@ -40,12 +37,9 @@ is to make it easy to install and update to the latests version of all of the `h
 
 __healthyR:__ A toolkit for hospital data
 
-<!-- badges: start -->
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/healthyR)](https://cran.r-project.org/package=healthyR)
-![](https://cranlogs.r-pkg.org/badges/healthyR)
-![](https://cranlogs.r-pkg.org/badges/grand-total/healthyR)
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html##experimental)
-<!-- badges: end -->
+CRAN Version | Monthly Downloads | Total Downloads | Lifecycle Status
+-------------|-------------------|-----------------|-----------------
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/healthyR)](https://cran.r-project.org/package=healthyR) | ![](https://cranlogs.r-pkg.org/badges/healthyR) | ![](https://cranlogs.r-pkg.org/badges/grand-total/healthyR) | [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html##stable)
 
 Purpose
 
@@ -62,12 +56,9 @@ of data in both the administrative and clinical sense. This led me to build out
 
 __healthyR.data:__ A companion data only package to `healthyR`
 
-<!-- badges: start -->
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/healthyR.data)](https://cran.r-project.org/package=healthyR.data)
-![](https://cranlogs.r-pkg.org/badges/healthyR.data)
-![](https://cranlogs.r-pkg.org/badges/grand-total/healthyR.data)
-[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html##stable)
-<!-- badges: end -->
+CRAN Version | Monthly Downloads | Total Downloads | Lifecycle Status
+-------------|-------------------|-----------------|-----------------
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/healthyR.data)](https://cran.r-project.org/package=healthyR.data) | ![](https://cranlogs.r-pkg.org/badges/healthyR.data) | ![](https://cranlogs.r-pkg.org/badges/grand-total/healthyR.data) | [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html##stable)
 
 Purpose
 
@@ -81,12 +72,9 @@ of data analysis, including time-series and machine learning.
 
 __healthyR.ts:__ A time-series analysis and modeling verb framework to `healthyR`
 
-<!-- badges: start -->
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/healthyR.ts)](https://cran.r-project.org/package=healthyR.ts)
-![](https://cranlogs.r-pkg.org/badges/healthyR.ts)
-![](https://cranlogs.r-pkg.org/badges/grand-total/healthyR.ts)
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html##experimental)
-<!-- badges: end -->
+CRAN Version | Monthly Downloads | Total Downloads | Lifecycle Status
+-------------|-------------------|-----------------|-----------------
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/healthyR.ts)](https://cran.r-project.org/package=healthyR.ts) | ![](https://cranlogs.r-pkg.org/badges/healthyR.ts) | ![](https://cranlogs.r-pkg.org/badges/grand-total/healthyR.ts) | [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html##stable)
 
 Purpose
 
