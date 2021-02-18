@@ -17,4 +17,4 @@ navbar:
       href: https://www.linkedin.com/in/spsanderson
 output:
   html_document:
-    theme: flatly
+    theme: paper
