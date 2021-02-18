@@ -12,9 +12,9 @@ navbar:
     - icon: fa-envelope fa-lg
       href: mailto:<spsanderson@gmail.com>
     - icon: fa-github fa-lg
-      href: http://github.com/spsanderson/
+      href: http://github.com/spsanderson
     - icon: fa-linkedin fa-lg
-      href: https://www.linkedin.com/in/spsanderson
+      href: https://www.linkedin.com/in/spsanderson/
 output:
   html_document:
-    theme: paper
+    theme: flatly

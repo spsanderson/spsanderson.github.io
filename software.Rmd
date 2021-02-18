@@ -6,7 +6,6 @@ output:
   html_document:
     code_folding: hide
     highlight: tango
-    theme: flatly
     toc: yes
     includes:
       in_header: GA_Script.html
