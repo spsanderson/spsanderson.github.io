@@ -26,6 +26,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ![](http://cranlogs.r-pkg.org/badges/healthyverse?color=brightgreen)
 ![](http://cranlogs.r-pkg.org/badges/grand-total/healthyverse?color=brightgreen)
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html##stable)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 <!-- badges: end -->
 
 Purpose
@@ -44,6 +45,7 @@ is to make it easy to install and update to the latests version of all of the `h
 ![](https://cranlogs.r-pkg.org/badges/healthyR)
 ![](https://cranlogs.r-pkg.org/badges/grand-total/healthyR)
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 <!-- badges: end -->
 
 Purpose
@@ -65,6 +67,7 @@ of data in both the administrative and clinical sense. This led me to build out
 ![](http://cranlogs.r-pkg.org/badges/healthyR.data?color=brightgreen)
 ![](http://cranlogs.r-pkg.org/badges/grand-total/healthyR.data?color=brightgreen)
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html##stable)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 <!-- badges: end -->
 
 Purpose
@@ -83,6 +86,7 @@ of data analysis, including time-series and machine learning.
 ![](https://cranlogs.r-pkg.org/badges/healthyR.ts)
 ![](https://cranlogs.r-pkg.org/badges/grand-total/healthyR.ts)
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 <!-- badges: end -->
 
 Purpose

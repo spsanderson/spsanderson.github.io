@@ -18,3 +18,5 @@ knitr::opts_chunk$set(echo = TRUE)
 # Welcome!
 
 > __This site built with R__
+
+All of my projects [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
