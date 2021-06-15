@@ -23,8 +23,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <!-- badges: start -->
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/healthyverse)](https://cran.r-project.org/package=healthyverse)
-![](http://cranlogs.r-pkg.org/badges/healthyverse?color=brightgreen)
-![](http://cranlogs.r-pkg.org/badges/grand-total/healthyverse?color=brightgreen)
+![](http://cranlogs.r-pkg.org/badges/healthyverse)
+![](http://cranlogs.r-pkg.org/badges/grand-total/healthyverse)
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html##stable)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 <!-- badges: end -->
@@ -64,8 +64,8 @@ of data in both the administrative and clinical sense. This led me to build out
 
 <!-- badges: start -->
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/healthyR.data)](https://cran.r-project.org/package=healthyR.data)
-![](http://cranlogs.r-pkg.org/badges/healthyR.data?color=brightgreen)
-![](http://cranlogs.r-pkg.org/badges/grand-total/healthyR.data?color=brightgreen)
+![](http://cranlogs.r-pkg.org/badges/healthyR.data)
+![](http://cranlogs.r-pkg.org/badges/grand-total/healthyR.data)
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html##stable)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 <!-- badges: end -->
@@ -82,7 +82,7 @@ of data analysis, including time-series and machine learning.
 > __healthyR.ts:__ A time-series analysis and modeling verb framework to `healthyR`
 
 <!-- badges: start -->
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/healthyR)](https://cran.r-project.org/package=healthyR.ts)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/healthyR.ts)](https://cran.r-project.org/package=healthyR.ts)
 ![](https://cranlogs.r-pkg.org/badges/healthyR.ts)
 ![](https://cranlogs.r-pkg.org/badges/grand-total/healthyR.ts)
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
