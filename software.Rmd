@@ -17,8 +17,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <img src="logos/healthyverse.png"  width="19.6%" align="center" />
 <img src="logos/healthyr.png"      width="19.6%" align="center" />
-<img src="logos/healthyr_ts.png"   width="19.6%" align="center" />
 <img src="logos/healthyr_data.png" width="19.6%" align="center" />
+<img src="logos/healthyr_ts.png"   width="19.6%" align="center" />
 <img src="logos/healthyr_ai.png"   width="19.6%" align="center" />
 
 
@@ -77,7 +77,7 @@ of data in both the administrative and clinical sense. This led me to build out
 
 Purpose
 
-The `healthyR.data1` package provides a useful simulated data-set that can be used for all sorts
+The `healthyR.data` package provides a useful simulated data-set that can be used for all sorts
 of data analysis, including time-series and machine learning.
 
 `healthyR.data` can be found [here](https://www.spsanderson.com/healthyR.data)
