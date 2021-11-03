@@ -34,8 +34,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Purpose
 
-This package is not yet avilable on CRAN but it has been submitted. The intent of this library
-is to make it easy to install and update to the latests version of all of the `healthyR` packages.
+The intent of this library is to make it easy to install and update to the latests version of all of the `healthyR` packages.
 
 `healthyverse` can be found [here](https://www.spsanderson.com/healthyverse)
 
