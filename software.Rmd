@@ -4,9 +4,9 @@ author: "Steven P Sanderson II, MPH"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
   html_document:
-    code_folding: hide
+    #code_folding: hide
     highlight: tango
-    toc: yes
+    toc: no
     includes:
       in_header: GA_Script.html
 ---
