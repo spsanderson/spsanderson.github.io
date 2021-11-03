@@ -15,7 +15,12 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-#__Software Projects__
+<img src="logos/healthyverse.png"  width="19.6%" align="center" />
+<img src="logos/healthyr.png"      width="19.6%" align="center" />
+<img src="logos/healthyr_ts.png"   width="19.6%" align="center" />
+<img src="logos/healthyr_data.png" width="19.6%" align="center" />
+<img src="logos/healthyr_ai.png"   width="19.6%" align="center" />
+
 
 ## healthyverse
 
