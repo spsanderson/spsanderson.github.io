@@ -1,5 +1,5 @@
 ---
-title: "My Personal Website"
+#title: "My Personal Website"
 author: "Steven P Sanderson II, MPH"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output:
@@ -21,9 +21,7 @@ knitr::opts_chunk$set(echo = TRUE)
 <img src="logos/healthyr_ts.png"   width="19.6%" align="center" />
 <img src="logos/healthyr_ai.png"   width="19.6%" align="center" />
 
-
-## healthyverse
-
+#
 > __healthyverse:__ Easily install and load all healthyR packages
 
 <!-- badges: start -->
@@ -40,8 +38,6 @@ This package is not yet avilable on CRAN but it has been submitted. The intent o
 is to make it easy to install and update to the latests version of all of the `healthyR` packages.
 
 `healthyverse` can be found [here](https://www.spsanderson.com/healthyverse)
-
-## healthyR
 
 > __healthyR:__ A toolkit for hospital data
 
@@ -63,8 +59,6 @@ of data in both the administrative and clinical sense. This led me to build out
 
 `healthyR` can be found [here](https://www.spsanderson.com/healthyR)
 
-## healthyR.data
-
 > __healthyR.data:__ A companion data only package to `healthyR`
 
 <!-- badges: start -->
@@ -82,8 +76,6 @@ of data analysis, including time-series and machine learning.
 
 `healthyR.data` can be found [here](https://www.spsanderson.com/healthyR.data)
 
-## healthyR.ts
-
 > __healthyR.ts:__ A time-series analysis and modeling verb framework to `healthyR`
 
 <!-- badges: start -->
@@ -99,8 +91,6 @@ Purpose
 The goal of healthyR.ts is to provide a consistent verb framework for performing time series analysis and forecasting on both administrative and clinical hospital data.
 
 `healthyR.ts` can be found [here](https://www.spsanderson.com/healthyR.ts)
-
-## healthyR.ai
 
 <!-- badges: start -->
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/healthyR.ai)](https://cran.r-project.org/package=healthyR.ai)
