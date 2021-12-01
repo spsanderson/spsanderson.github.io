@@ -24,5 +24,8 @@ All of my projects [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brig
 # Package Stats Page
 Click [here](https://www.spsanderson.com/package-downloads/) for package stats.
 
+# Package Time Series Analysis
+Click [here](https://www.spsanderson.com/healthyverse_tsa/)
+
 # GitHub Stats Badge
 ![Steven P. Sanderson II, MPH](https://github-readme-stats.vercel.app/api?username=spsanderson&show_icons=true)
