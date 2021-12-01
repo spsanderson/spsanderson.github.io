@@ -7,7 +7,18 @@ navbar:
     - text: "Home"
       href: index.html
     - text: "Software"
-      href: software.html
+      menu:
+        - text: "healthyverse"
+          href: software.html
+        - text: "healthyR"
+          href: healthyr.html
+        - text: "healthyR.data"
+          href: healthyrdata.html
+        - text: "healthyR.ts"
+          href: healthyrts.html
+        - text: "healthyR.ai"
+          href: healthyrai.html
+        
   right:
     - icon: fa-envelope fa-lg
       href: mailto:<spsanderson@gmail.com>
