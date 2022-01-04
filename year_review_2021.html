@@ -440,6 +440,29 @@ $(document).ready(function () {
 <p>The year 2021 was a big year for me. I did a lot of coding, a lot more than I typically do. The biggest push came personally in my ongoing development of my R packages that are in the <a href="www.spsanderson.com/healthyverse/">healthyverse</a>. To use the <strong>healthyverse</strong> simply do so in the familiar fashion:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;healthyverse&quot;</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(healthyverse)</span></code></pre></div>
+<p>In order to start looking at some of the data that pertains to 2021 lets first get the data from the CRAN logs. Since I do this daily already, I can simply use the rds file I already have. I am going to go through the motions though, in case others might want to do something similar. The functions I am using to get the data can <a href="https://github.com/spsanderson/healthyverse_tsa/blob/master/00_scripts/get_data_functions.R">be found here</a></p>
+<p>Now lets get that data!</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">&quot;01_scripts/get_data_functions.R&quot;</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">get_cran_data</span>()</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">get_package_release_data</span>()</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">csv_to_rds</span>()</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>data_tbl <span class="ot">&lt;-</span> <span class="fu">load_cran_data</span>()</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>data_tbl <span class="sc">%&gt;%</span> <span class="fu">glimpse</span>()</span></code></pre></div>
+<pre><code>## Rows: 26,168
+## Columns: 10
+## $ date      &lt;chr&gt; &quot;2020-11-23&quot;, &quot;2020-11-23&quot;, &quot;2020-11-23&quot;, &quot;2020-11-23&quot;, &quot;202~
+## $ time      &lt;chr&gt; &quot;15:36:55&quot;, &quot;11:26:39&quot;, &quot;23:34:44&quot;, &quot;18:39:32&quot;, &quot;09:00:41&quot;, ~
+## $ size      &lt;int&gt; 4858294, 4858294, 4858301, 4858295, 361, 4863722, 4864794, 4~
+## $ r_version &lt;chr&gt; NA, &quot;4.0.3&quot;, &quot;3.5.3&quot;, &quot;3.5.2&quot;, NA, NA, NA, NA, NA, NA, NA, N~
+## $ r_arch    &lt;chr&gt; NA, &quot;x86_64&quot;, &quot;x86_64&quot;, &quot;x86_64&quot;, NA, NA, NA, NA, NA, NA, NA~
+## $ r_os      &lt;chr&gt; NA, &quot;mingw32&quot;, &quot;mingw32&quot;, &quot;linux-gnu&quot;, NA, NA, NA, NA, NA, N~
+## $ package   &lt;chr&gt; &quot;healthyR.data&quot;, &quot;healthyR.data&quot;, &quot;healthyR.data&quot;, &quot;healthyR~
+## $ version   &lt;chr&gt; &quot;1.0.0&quot;, &quot;1.0.0&quot;, &quot;1.0.0&quot;, &quot;1.0.0&quot;, &quot;1.0.0&quot;, &quot;1.0.0&quot;, &quot;1.0.0~
+## $ country   &lt;chr&gt; &quot;US&quot;, &quot;US&quot;, &quot;US&quot;, &quot;GB&quot;, &quot;US&quot;, &quot;US&quot;, &quot;DE&quot;, &quot;HK&quot;, &quot;JP&quot;, &quot;US&quot;, ~
+## $ ip_id     &lt;int&gt; 2069, 2804, 78827, 27595, 90474, 90474, 42435, 74, 7655, 638~</code></pre>
 </div>
 <div id="github-stats" class="section level1">
 <h1>GitHub Stats</h1>

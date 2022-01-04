@@ -34,6 +34,25 @@ install.packages("healthyverse")
 library(healthyverse)
 ```
 
+In order to start looking at some of the data that pertains to 2021 lets first
+get the data from the CRAN logs. Since I do this daily already, I can simply use
+the rds file I already have. I am going to go through the motions though, in case
+others might want to do something similar. The functions I am using to get the 
+data can [be found here](https://github.com/spsanderson/healthyverse_tsa/blob/master/00_scripts/get_data_functions.R)
+
+Now lets get that data!
+```{r get_data, echo=TRUE,warning=FALSE,message=FALSE}
+library(tidyverse)
+source("01_scripts/get_data_functions.R")
+
+get_cran_data()
+get_package_release_data()
+csv_to_rds()
+data_tbl <- load_cran_data()
+
+data_tbl %>% glimpse()
+```
+
 # GitHub Stats
 
 Now lets take a look at some quick stats from my [GitHub](https://www.github.com/spsanderson/)

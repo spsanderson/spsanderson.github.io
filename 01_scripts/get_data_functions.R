@@ -17,9 +17,9 @@ get_package_release_data <- function(){
 }
 
 csv_to_rds <- function(){
-    data <- read.csv("01_data/cran_logs.csv")
-    pkg_data <- read.csv("01_data/pkg_release_tbl.csv")
-    saveRDS(data, "01_data/cran_logs.rds")
+    data <- read.csv("00_data/cran_logs.csv")
+    pkg_data <- read.csv("00_data/pkg_release_tbl.csv")
+    saveRDS(data, "00_data/cran_logs.rds")
     saveRDS(pkg_data, "00_data/pkg_release_tbl.rds")
 }
 
