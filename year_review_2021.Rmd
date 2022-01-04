@@ -12,7 +12,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 ```
 
 <img src="logos/healthyverse.png"  width="19.6%" align="center" />
@@ -41,7 +41,7 @@ others might want to do something similar. The functions I am using to get the
 data can [be found here](https://github.com/spsanderson/healthyverse_tsa/blob/master/00_scripts/get_data_functions.R)
 
 Now lets get that data!
-```{r get_data, echo=TRUE,warning=FALSE,message=FALSE}
+```{r get_data}
 library(tidyverse)
 library(lubridate)
 source("01_scripts/get_data_functions.R")
@@ -57,7 +57,7 @@ We can do this by filtering out data by time with the [timetk](https://business-
 
 Now lets filter our data below, some pre-processing may need to take place.
 
-```{r make_tibble, echo=TRUE, warning=FALSE, message=FALSE}
+```{r make_tibble}
 library(timetk)
 data_tbl <- downloads_processed_tbl() %>%
   filter_by_time(
@@ -70,7 +70,36 @@ glimpse(data_tbl)
 ```
 
 Now that we have our data, we have it for the year 2021 only with a start date
-of `r min(data_tbl$date)` and an end date of `r max(data_tbl$date)`
+of `r min(data_tbl$date)` and an end date of `r max(data_tbl$date)`.
+
+# Package Information
+
+The first thing we will do is look at how many downloads there were for each pacakge
+and it's version.
+
+```{r dl_by_pkg_v}
+library(knitr)
+
+data_tbl %>% 
+  count(package, version) %>% 
+  pivot_wider(
+    id_cols       = version
+    , names_from  = package
+    , values_from = n
+    , values_fill = 0
+    ) %>%
+  arrange(version) %>%
+  kable()
+```
+
+Now lets see how many total downloads for the year there were for each package.
+
+```{r total_dl}
+data_tbl %>%
+  count(package) %>%
+  set_names("Package","Total Downloads") %>%
+  kable()
+```
 
 # GitHub Stats
 
