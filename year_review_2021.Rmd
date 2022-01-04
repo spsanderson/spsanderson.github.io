@@ -113,8 +113,8 @@ Lets graph the data out as well.
 ```{r gaph_of_downloads}
 data_tbl %>%
   count(package, version) %>%
-  ggplot(aes(x = version, y = n)) +
-  geom_col(aes(group = package, fill = package, alpha = 1-.618)) +
+  ggplot(aes(x = version, y = n, alpha = 0.382)) +
+  geom_col(aes(group = package, fill = package)) +
   facet_wrap(package ~., ncol = 2, scales = "free") +
   scale_y_continuous(labels = scales::label_number(big.mark = ",")) +
   theme_minimal() +
@@ -133,8 +133,8 @@ data_tbl %>%
   mutate(cumulative_downloads = cumsum(n)) %>%
   mutate(record = row_number()) %>%
   ungroup() %>%
-  ggplot(aes(x = record, y = cumulative_downloads)) +
-  geom_col(aes(group = package, fill = package, alpha = 1-.618)) +
+  ggplot(aes(x = record, y = cumulative_downloads, alpha = 0.382)) +
+  geom_col(aes(group = package, fill = package)) +
   facet_wrap(package ~., ncol = 2, scales = "free") +
   scale_y_continuous(labels = scales::label_number(big.mark = ",")) +
   theme_minimal() +
@@ -153,7 +153,7 @@ data_tbl %>%
   mutate(cumulative_downloads = cumsum(n)) %>%
   mutate(record = row_number()) %>%
   ungroup() %>%
-  ggplot(aes(x = record, y = cumulative_downloads)) +
+  ggplot(aes(x = record, y = cumulative_downloads, alpha = 0.382)) +
   geom_line(aes(color = package, group = package), size = 1) +
   scale_y_continuous(labels = scales::label_number(big.mark = ",")) +
   theme_minimal() +
