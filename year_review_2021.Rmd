@@ -132,6 +132,7 @@ data_tbl %>%
   group_by(package) %>%
   mutate(cumulative_downloads = cumsum(n)) %>%
   mutate(record = row_number()) %>%
+  ungroup() %>%
   ggplot(aes(x = record, y = cumulative_downloads)) +
   geom_col(aes(group = package, fill = package, alpha = 1-.618)) +
   facet_wrap(package ~., ncol = 2, scales = "free") +
@@ -145,6 +146,31 @@ data_tbl %>%
     y = "Downloads",
     fill = "Package"
   )
+
+data_tbl %>%
+  count(package, version) %>%
+  group_by(package) %>%
+  mutate(cumulative_downloads = cumsum(n)) %>%
+  mutate(record = row_number()) %>%
+  ungroup() %>%
+  ggplot(aes(x = record, y = cumulative_downloads)) +
+  geom_line(aes(color = package, group = package), size = 1) +
+  scale_y_continuous(labels = scales::label_number(big.mark = ",")) +
+  theme_minimal() +
+  theme(legend.position = "bottom") +
+  labs(
+    title = "Cumulative Downloads by Package for 2021",
+    subtitle = "Colored by Package",
+    x = "",
+    y = "Downloads",
+    color = "Package"
+  )
+```
+
+Now lets get some timeseries graphs.
+
+```{r ts_plots}
+
 ```
 
 # GitHub Stats
