@@ -127,7 +127,24 @@ data_tbl %>%
     fill = "Package"
   )
 
-
+data_tbl %>%
+  count(package, version) %>%
+  group_by(package) %>%
+  mutate(cumulative_downloads = cumsum(n)) %>%
+  mutate(record = row_number()) %>%
+  ggplot(aes(x = record, y = cumulative_downloads)) +
+  geom_col(aes(group = package, fill = package, alpha = 1-.618)) +
+  facet_wrap(package ~., ncol = 2, scales = "free") +
+  scale_y_continuous(labels = scales::label_number(big.mark = ",")) +
+  theme_minimal() +
+  theme(legend.position = "bottom") +
+    labs(
+    title = "Downloads by Package for 2021",
+    subtitle = "Faceted by Package",
+    x = "",
+    y = "Downloads",
+    fill = "Package"
+  )
 ```
 
 # GitHub Stats
