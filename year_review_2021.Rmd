@@ -24,3 +24,6 @@ knitr::opts_chunk$set(echo = TRUE)
 #
 > __2021__ A Year in Review
 
+The year 2021 was a big year for me. I did a lot of coding, a lot more than I 
+typically do. The biggest push came personally in my ongoing development of my
+R packages that are in the [healthyverse](www.spsanderson.com/healthyverse/)
