@@ -43,14 +43,32 @@ data can [be found here](https://github.com/spsanderson/healthyverse_tsa/blob/ma
 Now lets get that data!
 ```{r get_data, echo=TRUE,warning=FALSE,message=FALSE}
 library(tidyverse)
+library(lubridate)
 source("01_scripts/get_data_functions.R")
+source("01_scripts/data_manipulation_functions.R")
 
 get_cran_data()
 get_package_release_data()
 csv_to_rds()
-data_tbl <- load_cran_data()
+```
 
-data_tbl %>% glimpse()
+Ok now that we have our data, lets ensure that we are only using the year 2021.
+We can do this by filtering out data by time with the [timetk](https://business-science.github.io/timetk/) package. 
+
+Now lets filter our data below, some pre-processing may need to take place.
+
+```{r make_tibble, echo=TRUE, warning=FALSE, message=FALSE}
+library(timetk)
+data_tbl <- downloads_processed_tbl() %>%
+  filter_by_time(
+    .date_var = date,
+    .start_date = "2021",
+    .end_date = "2021"
+  )
+
+glimpse(data_tbl)
+min(data_tbl$date)
+max(data_tbl$date)
 ```
 
 # GitHub Stats

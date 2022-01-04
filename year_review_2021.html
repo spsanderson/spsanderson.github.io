@@ -443,26 +443,41 @@ $(document).ready(function () {
 <p>In order to start looking at some of the data that pertains to 2021 lets first get the data from the CRAN logs. Since I do this daily already, I can simply use the rds file I already have. I am going to go through the motions though, in case others might want to do something similar. The functions I am using to get the data can <a href="https://github.com/spsanderson/healthyverse_tsa/blob/master/00_scripts/get_data_functions.R">be found here</a></p>
 <p>Now lets get that data!</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">&quot;01_scripts/get_data_functions.R&quot;</span>)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">get_cran_data</span>()</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">get_package_release_data</span>()</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">csv_to_rds</span>()</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>data_tbl <span class="ot">&lt;-</span> <span class="fu">load_cran_data</span>()</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>data_tbl <span class="sc">%&gt;%</span> <span class="fu">glimpse</span>()</span></code></pre></div>
-<pre><code>## Rows: 26,168
-## Columns: 10
-## $ date      &lt;chr&gt; &quot;2020-11-23&quot;, &quot;2020-11-23&quot;, &quot;2020-11-23&quot;, &quot;2020-11-23&quot;, &quot;202~
-## $ time      &lt;chr&gt; &quot;15:36:55&quot;, &quot;11:26:39&quot;, &quot;23:34:44&quot;, &quot;18:39:32&quot;, &quot;09:00:41&quot;, ~
-## $ size      &lt;int&gt; 4858294, 4858294, 4858301, 4858295, 361, 4863722, 4864794, 4~
-## $ r_version &lt;chr&gt; NA, &quot;4.0.3&quot;, &quot;3.5.3&quot;, &quot;3.5.2&quot;, NA, NA, NA, NA, NA, NA, NA, N~
-## $ r_arch    &lt;chr&gt; NA, &quot;x86_64&quot;, &quot;x86_64&quot;, &quot;x86_64&quot;, NA, NA, NA, NA, NA, NA, NA~
-## $ r_os      &lt;chr&gt; NA, &quot;mingw32&quot;, &quot;mingw32&quot;, &quot;linux-gnu&quot;, NA, NA, NA, NA, NA, N~
-## $ package   &lt;chr&gt; &quot;healthyR.data&quot;, &quot;healthyR.data&quot;, &quot;healthyR.data&quot;, &quot;healthyR~
-## $ version   &lt;chr&gt; &quot;1.0.0&quot;, &quot;1.0.0&quot;, &quot;1.0.0&quot;, &quot;1.0.0&quot;, &quot;1.0.0&quot;, &quot;1.0.0&quot;, &quot;1.0.0~
-## $ country   &lt;chr&gt; &quot;US&quot;, &quot;US&quot;, &quot;US&quot;, &quot;GB&quot;, &quot;US&quot;, &quot;US&quot;, &quot;DE&quot;, &quot;HK&quot;, &quot;JP&quot;, &quot;US&quot;, ~
-## $ ip_id     &lt;int&gt; 2069, 2804, 78827, 27595, 90474, 90474, 42435, 74, 7655, 638~</code></pre>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">&quot;01_scripts/get_data_functions.R&quot;</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(<span class="st">&quot;01_scripts/data_manipulation_functions.R&quot;</span>)</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">get_cran_data</span>()</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">get_package_release_data</span>()</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">csv_to_rds</span>()</span></code></pre></div>
+<p>Ok now that we have our data, lets ensure that we are only using the year 2021. We can do this by filtering out data by time with the <a href="https://business-science.github.io/timetk/">timetk</a> package.</p>
+<p>Now lets filter our data below, some pre-processing may need to take place.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(timetk)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>data_tbl <span class="ot">&lt;-</span> <span class="fu">downloads_processed_tbl</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter_by_time</span>(</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">.date_var =</span> date,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">.start_date =</span> <span class="st">&quot;2021&quot;</span>,</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">.end_date =</span> <span class="st">&quot;2021&quot;</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(data_tbl)</span></code></pre></div>
+<pre><code>## Rows: 24,887
+## Columns: 11
+## $ date      &lt;date&gt; 2021-01-01, 2021-01-01, 2021-01-01, 2021-01-01, 2021-01-01,~
+## $ time      &lt;Period&gt; 3H 41M 37S, 3H 42M 2S, 10H 1M 57S, 10H 1M 57S, 10H 1M 57S~
+## $ date_time &lt;dttm&gt; 2021-01-01 03:41:37, 2021-01-01 03:42:02, 2021-01-01 10:01:~
+## $ size      &lt;int&gt; 2910045, 5668471, 533, 5669257, 81738, 5668465, 530, 14701, ~
+## $ r_version &lt;chr&gt; &quot;4.0.3&quot;, &quot;3.6.0&quot;, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+## $ r_arch    &lt;chr&gt; &quot;x86_64&quot;, &quot;x86_64&quot;, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, ~
+## $ r_os      &lt;chr&gt; &quot;mingw32&quot;, &quot;mingw32&quot;, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA~
+## $ package   &lt;chr&gt; &quot;healthyR&quot;, &quot;healthyR.data&quot;, &quot;healthyR.data&quot;, &quot;healthyR.data~
+## $ version   &lt;chr&gt; &quot;0.1.1&quot;, &quot;1.0.0&quot;, &quot;1.0.0&quot;, &quot;1.0.0&quot;, &quot;1.0.0&quot;, &quot;1.0.0&quot;, &quot;1.0.0~
+## $ country   &lt;chr&gt; &quot;GH&quot;, &quot;GH&quot;, &quot;US&quot;, &quot;US&quot;, &quot;US&quot;, &quot;US&quot;, &quot;US&quot;, &quot;US&quot;, &quot;US&quot;, &quot;US&quot;, ~
+## $ ip_id     &lt;int&gt; 220, 220, 8154, 8154, 8154, 8154, 8154, 8154, 8154, 8154, 81~</code></pre>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">min</span>(data_tbl<span class="sc">$</span>date)</span></code></pre></div>
+<pre><code>## [1] &quot;2021-01-01&quot;</code></pre>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">max</span>(data_tbl<span class="sc">$</span>date)</span></code></pre></div>
+<pre><code>## [1] &quot;2021-12-31&quot;</code></pre>
 </div>
 <div id="github-stats" class="section level1">
 <h1>GitHub Stats</h1>
