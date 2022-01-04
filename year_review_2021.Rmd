@@ -26,4 +26,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 The year 2021 was a big year for me. I did a lot of coding, a lot more than I 
 typically do. The biggest push came personally in my ongoing development of my
-R packages that are in the [healthyverse](www.spsanderson.com/healthyverse/)
+R packages that are in the [healthyverse](www.spsanderson.com/healthyverse/). To
+use the __healthyverse__ simply do so in the familiar fashion:
+
+```{r install_healthyverse, echo=TRUE, eval=FALSE}
+install.packages("healthyverse")
+library(healthyverse)
+```
