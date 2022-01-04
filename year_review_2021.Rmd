@@ -67,9 +67,10 @@ data_tbl <- downloads_processed_tbl() %>%
   )
 
 glimpse(data_tbl)
-min(data_tbl$date)
-max(data_tbl$date)
 ```
+
+Now that we have our data, we have it for the year 2021 only with a start date
+of `r min(data_tbl$date)` and an end date of `r max(data_tbl$date)`
 
 # GitHub Stats
 
