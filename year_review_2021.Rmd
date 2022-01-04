@@ -33,3 +33,15 @@ use the __healthyverse__ simply do so in the familiar fashion:
 install.packages("healthyverse")
 library(healthyverse)
 ```
+
+# GitHub Stats
+
+Now lets take a look at some quick stats from my [GitHub](https://www.github.com/spsanderson/)
+
+First my contribution grid:
+
+<img src="logos/github_contributions_2021.JPG" width="98.0%" align="center" />
+
+Secondly my badge:
+
+<img src="logos/github_badge.JPG" width="98.0%" align="center" />
