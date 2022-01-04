@@ -171,10 +171,63 @@ Now lets get some time-series graphs.
 
 ```{r ts_plots}
 library(healthyR.ts)
+pkg_tbl <- readRDS("00_data/pkg_release_tbl.rds")
 
 data_tbl %>% 
   summarise_by_time(.date_var = date, n = n()) %>% 
   ts_calendar_heatmap_plot(.date_col = date, .value_col = n, .interactive = FALSE)
+
+data_tbl %>%
+  ts_downloads_tbl(.by_time = "day", package) %>%
+  ggplot(aes(date, log1p(value))) +
+  geom_point(aes(group = package, color = package), size = 1) +
+  ggtitle(paste("Package Downloads: {healthyverse}")) +
+  geom_smooth(method = "loess", color = "black",  se = FALSE) +
+  geom_vline(
+    data = pkg_tbl
+    , aes(xintercept = as.Date(date))
+    , color = "red"
+    , lwd = 1
+    , lty = "solid"
+  ) +
+  facet_wrap(package ~., ncol = 2, scales = "free_x") +
+  theme_minimal() +
+  labs(
+    subtitle = "Vertical lines represent release dates",
+    x = "Date",
+    y = "log1p(Counts)",
+    color = "Package"
+  ) +
+  theme(legend.position = "bottom")
+
+data_tbl %>%
+  ts_downloads_tbl(.by_time = "day") %>%
+  rename(Actual = value) %>%
+  tk_augment_differences(.value = Actual, .differences = 1) %>%
+  tk_augment_differences(.value = Actual, .differences = 2) %>%
+  rename(velocity = contains("_diff1")) %>%
+  rename(acceleration = contains("_diff2")) %>%
+  pivot_longer(-date) %>%
+  mutate(name = str_to_title(name)) %>%
+  mutate(name = as_factor(name)) %>%
+  ggplot(aes(x = date, y = value, group = name)) +
+  geom_point(alpha = .2) +
+  geom_vline(
+    data = pkg_tbl
+    , aes(xintercept = as.Date(date), color = package)
+    , lwd = 1
+    , lty = "solid"
+  ) +
+  facet_wrap(name ~ ., ncol = 1, scale = "free") +
+  theme_minimal() +
+  labs(
+    title = "Total Downloads: Trend, Velocity, and Accelertion",
+    subtitle = "Vertical Lines Indicate a CRAN Release date for a package.",
+    x = "Date",
+    y = "",
+    color = ""
+  ) +
+  theme(legend.position = "bottom")
 ```
 
 # GitHub Stats
