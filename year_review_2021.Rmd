@@ -167,10 +167,14 @@ data_tbl %>%
   )
 ```
 
-Now lets get some timeseries graphs.
+Now lets get some time-series graphs.
 
 ```{r ts_plots}
+library(healthyR.ts)
 
+data_tbl %>% 
+  summarise_by_time(.date_var = date, n = n()) %>% 
+  ts_calendar_heatmap_plot(.date_col = date, .value_col = n)
 ```
 
 # GitHub Stats
