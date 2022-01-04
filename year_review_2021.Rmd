@@ -12,7 +12,14 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+knitr::opts_chunk$set(
+  echo = TRUE, 
+  warning = FALSE, 
+  message = FALSE,
+  fig.path = "man/figures/README-",
+  fig.width = 12,
+  fig.height = 10
+  )
 ```
 
 <img src="logos/healthyverse.png"  width="19.6%" align="center" />
@@ -99,6 +106,28 @@ data_tbl %>%
   count(package) %>%
   set_names("Package","Total Downloads") %>%
   kable()
+```
+
+Lets graph the data out as well.
+
+```{r gaph_of_downloads}
+data_tbl %>%
+  count(package, version) %>%
+  ggplot(aes(x = version, y = n)) +
+  geom_col(aes(group = package, fill = package, alpha = 1-.618)) +
+  facet_wrap(package ~., ncol = 2, scales = "free") +
+  scale_y_continuous(labels = scales::label_number(big.mark = ",")) +
+  theme_minimal() +
+  theme(legend.position = "bottom") +
+  labs(
+    title = "Downloads by Package for 2021",
+    subtitle = "Faceted by Package",
+    x = "Version",
+    y = "Downloads",
+    fill = "Package"
+  )
+
+
 ```
 
 # GitHub Stats
