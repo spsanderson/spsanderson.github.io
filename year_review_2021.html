@@ -713,7 +713,8 @@ $(document).ready(function () {
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>data_tbl <span class="sc">%&gt;%</span> </span>
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise_by_time</span>(<span class="at">.date_var =</span> date, <span class="at">n =</span> <span class="fu">n</span>()) <span class="sc">%&gt;%</span> </span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ts_calendar_heatmap_plot</span>(<span class="at">.date_col =</span> date, <span class="at">.value_col =</span> n)</span></code></pre></div>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ts_calendar_heatmap_plot</span>(<span class="at">.date_col =</span> date, <span class="at">.value_col =</span> n, <span class="at">.interactive =</span> <span class="cn">FALSE</span>)</span></code></pre></div>
+<p><img src="man/figures/README-ts_plots-1.png" width="1152" /></p>
 </div>
 <div id="github-stats" class="section level1">
 <h1>GitHub Stats</h1>
