@@ -18,7 +18,10 @@ navbar:
           href: healthyrts.html
         - text: "healthyR.ai"
           href: healthyrai.html
-        
+    - text: "Year in Review"
+      menu:
+        - text: "2021"
+          href: year_review_2021.html
   right:
     - icon: fa-envelope fa-lg
       href: mailto:<spsanderson@gmail.com>

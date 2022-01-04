@@ -12,7 +12,7 @@
 <meta name="author" content="Steven P Sanderson II, MPH" />
 
 
-<title>healthyrts.knit</title>
+<title>A Review of 2021</title>
 
 <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -31,6 +31,7 @@
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/navigation-1.1/codefolding.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -215,6 +216,9 @@ $(document).ready(function () {
 </style>
 
 <!-- code folding -->
+<style type="text/css">
+.code-folding-btn { margin-bottom: 4px; }
+</style>
 
 
 
@@ -307,23 +311,29 @@ $(document).ready(function () {
 
 <div id="header">
 
+<div class="btn-group pull-right float-right">
+<button type="button" class="btn btn-default btn-xs btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<ul class="dropdown-menu dropdown-menu-right" style="min-width: 50px;">
+<li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
+<li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
+</ul>
+</div>
 
 
+
+<h1 class="title toc-ignore">A Review of 2021</h1>
+<h4 class="author">Steven P Sanderson II, MPH</h4>
+<h4 class="date">04 January, 2022</h4>
 
 </div>
 
 
-<p><img src="logos/healthyr_ts.png"   width="19.6%" align="center" /></p>
+<p><img src="logos/healthyverse.png"  width="19.6%" align="center" /> <img src="logos/healthyr.png"      width="19.6%" align="center" /> <img src="logos/healthyr_data.png" width="19.6%" align="center" /> <img src="logos/healthyr_ts.png"   width="19.6%" align="center" /> <img src="logos/healthyr_ai.png"   width="19.6%" align="center" /></p>
 <div id="section" class="section level1">
 <h1></h1>
 <blockquote>
-<p><strong>healthyR.ts:</strong> A time-series analysis and modeling verb framework to <code>healthyR</code></p>
+<p><strong>2021</strong> A Year in Review</p>
 </blockquote>
-<!-- badges: start -->
-<p><a href="https://cran.r-project.org/package=healthyR.ai"><embed src="http://www.r-pkg.org/badges/version/healthyR.ai" /></a> <embed src="https://cranlogs.r-pkg.org/badges/healthyR.ai" /> <embed src="https://cranlogs.r-pkg.org/badges/grand-total/healthyR.ai" /> <a href="https://lifecycle.r-lib.org/articles/stages.html#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental" /></a> <a href="http://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a> <!-- badges: end --></p>
-<p>Purpose</p>
-<p>The goal of healthyR.ts is to provide a consistent verb framework for performing time series analysis and forecasting on both administrative and clinical hospital data.</p>
-<p><code>healthyR.ts</code> can be found <a href="https://www.spsanderson.com/healthyR.ts">here</a></p>
 </div>
 
 
@@ -359,6 +369,11 @@ $(document).ready(function () {
 </script>
 
 <!-- code folding -->
+<script>
+$(document).ready(function () {
+  window.initializeCodeFolding("show" === "show");
+});
+</script>
 
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
