@@ -116,13 +116,25 @@ data_tbl %>%
   ungroup() %>%
   select(package, release_count) %>%
   distinct() %>%
-  set_names("Package", "Number of Releasees") %>%
+  set_names("Package", "Number of Releases") %>%
   kable()
+
+total_number_of_releases <- data_tbl %>%
+  select(package, version) %>%
+  group_by(package) %>%
+  distinct() %>%
+  mutate(release_count = n()) %>%
+  ungroup() %>%
+  select(package, release_count) %>%
+  distinct() %>%
+  summarise(total = sum(release_count, na.rm = TRUE))
+  
 ```
 
-So all in all there was a total of `r nrow(data_tbl) %>% scales::number(big.mark=",")` downloads of all the `healthyverse` packages in 2021.
+So all in all there was a total of `r nrow(data_tbl) %>% scales::number(big.mark=",")` downloads of all the `healthyverse` packages in 2021. There were in total `r total_number_of_releases` package releases as well.
 
-Lets graph the data out as well.
+# Graphs
+Now lets graph the data out!
 
 ```{r gaph_of_downloads}
 data_tbl %>%
@@ -181,6 +193,7 @@ data_tbl %>%
   )
 ```
 
+# Time Series Graphs
 Now lets get some time-series graphs.
 
 ```{r ts_plots}
