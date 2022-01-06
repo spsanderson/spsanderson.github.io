@@ -41,6 +41,14 @@ install.packages("healthyverse")
 library(healthyverse)
 ```
 
+Here are links to all of the packages:
+
+-   [`healthyR`](https://www.spsanderson.com/healthyR/)
+-   [`healthyR.data`](https://www.spsanderson.com/healthyR.data/)
+-   [`healthyR.ts`](https://www.spsanderson.com/healthyR.ts/)
+-   [`healthyR.ai`](https://www.spsanderson.com/healthyR.ai/)
+-   [`healthyverse`](https://www.spsanderson.com/healthyverse/)
+
 In order to start looking at some of the data that pertains to 2021 lets first
 get the data from the CRAN logs. Since I do this daily already, I can simply use
 the rds file I already have. I am going to go through the motions though, in case
