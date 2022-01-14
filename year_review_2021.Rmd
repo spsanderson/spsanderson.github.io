@@ -176,7 +176,7 @@ data_tbl %>%
     labs(
     title = "Downloads by Package for 2021",
     subtitle = "Faceted by Package",
-    x = "",
+    x = "Relase Number",
     y = "Downloads",
     fill = "Package"
   )
@@ -195,7 +195,7 @@ data_tbl %>%
   labs(
     title = "Cumulative Downloads by Package for 2021",
     subtitle = "Colored by Package",
-    x = "",
+    x = "Release Number",
     y = "Downloads",
     color = "Package"
   )
