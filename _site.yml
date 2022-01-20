@@ -18,6 +18,8 @@ navbar:
           href: healthyrts.html
         - text: "healthyR.ai"
           href: healthyrai.html
+        - text: "TidyDensity"
+          href: tidydensity.html
     - text: "Years in Review"
       menu:
         - text: "2021"
