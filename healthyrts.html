@@ -14,7 +14,7 @@
 
 <title>healthyrts.knit</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.12/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -60,6 +60,7 @@
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -80,6 +81,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -232,7 +236,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -245,7 +249,7 @@ $(document).ready(function () {
   <a href="index.html">Home</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Software
      
     <span class="caret"></span>
@@ -272,7 +276,7 @@ $(document).ready(function () {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Years in Review
      
     <span class="caret"></span>
@@ -320,13 +324,26 @@ $(document).ready(function () {
 <div id="section" class="section level1">
 <h1></h1>
 <blockquote>
-<p><strong>healthyR.ts:</strong> A time-series analysis and modeling verb framework to <code>healthyR</code></p>
+<p><strong>healthyR.ts:</strong> A time-series analysis and modeling
+verb framework to <code>healthyR</code></p>
 </blockquote>
 <!-- badges: start -->
-<p><a href="https://cran.r-project.org/package=healthyR.ai"><embed src="http://www.r-pkg.org/badges/version/healthyR.ai" /></a> <embed src="https://cranlogs.r-pkg.org/badges/healthyR.ai" /> <embed src="https://cranlogs.r-pkg.org/badges/grand-total/healthyR.ai" /> <a href="https://lifecycle.r-lib.org/articles/stages.html#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental" /></a> <a href="http://makeapullrequest.com"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" /></a> <!-- badges: end --></p>
+<p><a href="https://cran.r-project.org/package=healthyR.ai"><embed
+src="http://www.r-pkg.org/badges/version/healthyR.ai" /></a> <embed
+src="https://cranlogs.r-pkg.org/badges/healthyR.ai" /> <embed
+src="https://cranlogs.r-pkg.org/badges/grand-total/healthyR.ai" /> <a
+href="https://lifecycle.r-lib.org/articles/stages.html#experimental"><img
+src="https://img.shields.io/badge/lifecycle-experimental-orange.svg"
+alt="Lifecycle: experimental" /></a> <a
+href="http://makeapullrequest.com"><img
+src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square"
+alt="PRs Welcome" /></a> <!-- badges: end --></p>
 <p>Purpose</p>
-<p>The goal of healthyR.ts is to provide a consistent verb framework for performing time series analysis and forecasting on both administrative and clinical hospital data.</p>
-<p><code>healthyR.ts</code> can be found <a href="https://www.spsanderson.com/healthyR.ts">here</a></p>
+<p>The goal of healthyR.ts is to provide a consistent verb framework for
+performing time series analysis and forecasting on both administrative
+and clinical hospital data.</p>
+<p><code>healthyR.ts</code> can be found <a
+href="https://www.spsanderson.com/healthyR.ts">here</a></p>
 </div>
 
 

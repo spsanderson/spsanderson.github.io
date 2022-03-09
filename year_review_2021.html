@@ -14,7 +14,7 @@
 
 <title>A Review of 2021</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.12/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -52,6 +52,7 @@
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   ul.task-list{list-style: none;}
     </style>
+
 
 
 <style type="text/css">
@@ -184,6 +185,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -339,7 +343,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -352,7 +356,7 @@ $(document).ready(function () {
   <a href="index.html">Home</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Software
      
     <span class="caret"></span>
@@ -379,7 +383,7 @@ $(document).ready(function () {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Years in Review
      
     <span class="caret"></span>
@@ -418,7 +422,7 @@ $(document).ready(function () {
 <div id="header">
 
 <div class="btn-group pull-right float-right">
-<button type="button" class="btn btn-default btn-xs btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
+<button type="button" class="btn btn-default btn-xs btn-secondary btn-sm dropdown-toggle" data-toggle="dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Code</span> <span class="caret"></span></button>
 <ul class="dropdown-menu dropdown-menu-right" style="min-width: 50px;">
 <li><a id="rmd-show-all-code" href="#">Show All Code</a></li>
 <li><a id="rmd-hide-all-code" href="#">Hide All Code</a></li>
@@ -429,29 +433,48 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">A Review of 2021</h1>
 <h4 class="author">Steven P Sanderson II, MPH</h4>
-<h4 class="date">20 January, 2022</h4>
+<h4 class="date">09 March, 2022</h4>
 
 </div>
 
 
-<p><img src="logos/healthyverse.png"  width="19.6%" align="center" /> <img src="logos/healthyr.png"      width="19.6%" align="center" /> <img src="logos/healthyr_data.png" width="19.6%" align="center" /> <img src="logos/healthyr_ts.png"   width="19.6%" align="center" /> <img src="logos/healthyr_ai.png"   width="19.6%" align="center" /></p>
+<p><img src="logos/healthyverse.png"  width="19.6%" align="center" />
+<img src="logos/healthyr.png"      width="19.6%" align="center" />
+<img src="logos/healthyr_data.png" width="19.6%" align="center" />
+<img src="logos/healthyr_ts.png"   width="19.6%" align="center" />
+<img src="logos/healthyr_ai.png"   width="19.6%" align="center" /></p>
 <div id="section" class="section level1">
 <h1></h1>
 <blockquote>
 <p><strong>2021</strong> A Year in Review</p>
 </blockquote>
-<p>The year 2021 was a big year for me. I did a lot of coding, a lot more than I typically do. The biggest push came personally in my ongoing development of my R packages that are in the <a href="www.spsanderson.com/healthyverse/">healthyverse</a>. To use the <strong>healthyverse</strong> simply do so in the familiar fashion:</p>
+<p>The year 2021 was a big year for me. I did a lot of coding, a lot
+more than I typically do. The biggest push came personally in my ongoing
+development of my R packages that are in the <a
+href="www.spsanderson.com/healthyverse/">healthyverse</a>. To use the
+<strong>healthyverse</strong> simply do so in the familiar fashion:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;healthyverse&quot;</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(healthyverse)</span></code></pre></div>
 <p>Here are links to all of the packages:</p>
 <ul>
-<li><a href="https://www.spsanderson.com/healthyR/"><code>healthyR</code></a></li>
-<li><a href="https://www.spsanderson.com/healthyR.data/"><code>healthyR.data</code></a></li>
-<li><a href="https://www.spsanderson.com/healthyR.ts/"><code>healthyR.ts</code></a></li>
-<li><a href="https://www.spsanderson.com/healthyR.ai/"><code>healthyR.ai</code></a></li>
-<li><a href="https://www.spsanderson.com/healthyverse/"><code>healthyverse</code></a></li>
+<li><a
+href="https://www.spsanderson.com/healthyR/"><code>healthyR</code></a></li>
+<li><a
+href="https://www.spsanderson.com/healthyR.data/"><code>healthyR.data</code></a></li>
+<li><a
+href="https://www.spsanderson.com/healthyR.ts/"><code>healthyR.ts</code></a></li>
+<li><a
+href="https://www.spsanderson.com/healthyR.ai/"><code>healthyR.ai</code></a></li>
+<li><a
+href="https://www.spsanderson.com/healthyverse/"><code>healthyverse</code></a></li>
 </ul>
-<p>In order to start looking at some of the data that pertains to 2021 lets first get the data from the CRAN logs. Since I do this daily already, I can simply use the rds file I already have. I am going to go through the motions though, in case others might want to do something similar. The functions I am using to get the data can <a href="https://github.com/spsanderson/healthyverse_tsa/blob/master/00_scripts/get_data_functions.R">be found here</a></p>
+<p>In order to start looking at some of the data that pertains to 2021
+lets first get the data from the CRAN logs. Since I do this daily
+already, I can simply use the rds file I already have. I am going to go
+through the motions though, in case others might want to do something
+similar. The functions I am using to get the data can <a
+href="https://github.com/spsanderson/healthyverse_tsa/blob/master/00_scripts/get_data_functions.R">be
+found here</a></p>
 <p>Now lets get that data!</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span>
@@ -462,8 +485,12 @@ $(document).ready(function () {
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">get_cran_data</span>()</span>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">get_package_release_data</span>()</span>
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">csv_to_rds</span>()</span></code></pre></div>
-<p>Ok now that we have our data, lets ensure that we are only using the year 2021. We can do this by filtering out data by time with the <a href="https://business-science.github.io/timetk/">timetk</a> package.</p>
-<p>Now lets filter our data below, some pre-processing may need to take place.</p>
+<p>Ok now that we have our data, lets ensure that we are only using the
+year 2021. We can do this by filtering out data by time with the <a
+href="https://business-science.github.io/timetk/">timetk</a>
+package.</p>
+<p>Now lets filter our data below, some pre-processing may need to take
+place.</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(timetk)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>data_tbl <span class="ot">&lt;-</span> <span class="fu">downloads_processed_tbl</span>() <span class="sc">%&gt;%</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter_by_time</span>(</span>
@@ -486,11 +513,13 @@ $(document).ready(function () {
 ## $ version   &lt;chr&gt; &quot;0.1.1&quot;, &quot;1.0.0&quot;, &quot;1.0.0&quot;, &quot;1.0.0&quot;, &quot;1.0.0&quot;, &quot;1.0.0&quot;, &quot;1.0.0~
 ## $ country   &lt;chr&gt; &quot;GH&quot;, &quot;GH&quot;, &quot;US&quot;, &quot;US&quot;, &quot;US&quot;, &quot;US&quot;, &quot;US&quot;, &quot;US&quot;, &quot;US&quot;, &quot;US&quot;, ~
 ## $ ip_id     &lt;int&gt; 220, 220, 8154, 8154, 8154, 8154, 8154, 8154, 8154, 8154, 81~</code></pre>
-<p>Now that we have our data, we have it for the year 2021 only with a start date of 2021-01-01 and an end date of 2021-12-31.</p>
+<p>Now that we have our data, we have it for the year 2021 only with a
+start date of 2021-01-01 and an end date of 2021-12-31.</p>
 </div>
 <div id="package-information" class="section level1">
 <h1>Package Information</h1>
-<p>The first thing we will do is look at how many downloads there were for each pacakge and it’s version.</p>
+<p>The first thing we will do is look at how many downloads there were
+for each pacakge and it’s version.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>data_tbl <span class="sc">%&gt;%</span> </span>
@@ -504,6 +533,14 @@ $(document).ready(function () {
 <span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(version) <span class="sc">%&gt;%</span></span>
 <span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable</span>()</span></code></pre></div>
 <table>
+<colgroup>
+<col width="11%" />
+<col width="13%" />
+<col width="17%" />
+<col width="20%" />
+<col width="17%" />
+<col width="19%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">version</th>
@@ -629,7 +666,8 @@ $(document).ready(function () {
 </tr>
 </tbody>
 </table>
-<p>Now lets see how many total downloads for the year there were for each package.</p>
+<p>Now lets see how many total downloads for the year there were for
+each package.</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>data_tbl <span class="sc">%&gt;%</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(package) <span class="sc">%&gt;%</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set_names</span>(<span class="st">&quot;Package&quot;</span>,<span class="st">&quot;Total Downloads&quot;</span>) <span class="sc">%&gt;%</span></span>
@@ -713,7 +751,9 @@ $(document).ready(function () {
 <span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(package, release_count) <span class="sc">%&gt;%</span></span>
 <span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>() <span class="sc">%&gt;%</span></span>
 <span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">total =</span> <span class="fu">sum</span>(release_count, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code></pre></div>
-<p>So all in all there was a total of 24,887 downloads of all the <code>healthyverse</code> packages in 2021. There were in total 23 package releases as well.</p>
+<p>So all in all there was a total of 24,887 downloads of all the
+<code>healthyverse</code> packages in 2021. There were in total 23
+package releases as well.</p>
 </div>
 <div id="graphs" class="section level1">
 <h1>Graphs</h1>
@@ -865,7 +905,8 @@ $(document).ready(function () {
 </div>
 <div id="mapping" class="section level1">
 <h1>Mapping</h1>
-<p>So now that we have seen all the downloads in variaous ways, where did they all come from? Lets take a look.</p>
+<p>So now that we have seen all the downloads in variaous ways, where
+did they all come from? Lets take a look.</p>
 <div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tmaptools)</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(countrycode)</span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(mapview)</span>
@@ -896,52 +937,69 @@ $(document).ready(function () {
 <td align="right">8.030028</td>
 <td align="right">-1.080027</td>
 <td align="left">Ghana</td>
-<td align="left"><a href="https://nominatim.openstreetmap.org/ui/mapicons//poi_boundary_administrative.p.20.png" class="uri">https://nominatim.openstreetmap.org/ui/mapicons//poi_boundary_administrative.p.20.png</a></td>
+<td align="left"><a
+href="https://nominatim.openstreetmap.org/ui/mapicons//poi_boundary_administrative.p.20.png"
+class="uri">https://nominatim.openstreetmap.org/ui/mapicons//poi_boundary_administrative.p.20.png</a></td>
 </tr>
 <tr class="even">
 <td align="left">United States</td>
 <td align="right">39.783730</td>
 <td align="right">-100.445882</td>
 <td align="left">United States</td>
-<td align="left"><a href="https://nominatim.openstreetmap.org/ui/mapicons//poi_boundary_administrative.p.20.png" class="uri">https://nominatim.openstreetmap.org/ui/mapicons//poi_boundary_administrative.p.20.png</a></td>
+<td align="left"><a
+href="https://nominatim.openstreetmap.org/ui/mapicons//poi_boundary_administrative.p.20.png"
+class="uri">https://nominatim.openstreetmap.org/ui/mapicons//poi_boundary_administrative.p.20.png</a></td>
 </tr>
 <tr class="odd">
 <td align="left">Hong Kong SAR China</td>
 <td align="right">22.350627</td>
 <td align="right">114.184916</td>
-<td align="left">&lt;U+9999&gt;&lt;U+6E2F&gt; Hong Kong, &lt;U+4E2D&gt;&lt;U+56FD&gt;</td>
-<td align="left"><a href="https://nominatim.openstreetmap.org/ui/mapicons//poi_boundary_administrative.p.20.png" class="uri">https://nominatim.openstreetmap.org/ui/mapicons//poi_boundary_administrative.p.20.png</a></td>
+<td align="left">&lt;U+9999&gt;&lt;U+6E2F&gt; Hong Kong,
+&lt;U+4E2D&gt;&lt;U+56FD&gt;</td>
+<td align="left"><a
+href="https://nominatim.openstreetmap.org/ui/mapicons//poi_boundary_administrative.p.20.png"
+class="uri">https://nominatim.openstreetmap.org/ui/mapicons//poi_boundary_administrative.p.20.png</a></td>
 </tr>
 <tr class="even">
 <td align="left">Canada</td>
 <td align="right">61.066692</td>
 <td align="right">-107.991707</td>
 <td align="left">Canada</td>
-<td align="left"><a href="https://nominatim.openstreetmap.org/ui/mapicons//poi_boundary_administrative.p.20.png" class="uri">https://nominatim.openstreetmap.org/ui/mapicons//poi_boundary_administrative.p.20.png</a></td>
+<td align="left"><a
+href="https://nominatim.openstreetmap.org/ui/mapicons//poi_boundary_administrative.p.20.png"
+class="uri">https://nominatim.openstreetmap.org/ui/mapicons//poi_boundary_administrative.p.20.png</a></td>
 </tr>
 <tr class="odd">
 <td align="left">China</td>
 <td align="right">35.000074</td>
 <td align="right">104.999927</td>
 <td align="left">&lt;U+4E2D&gt;&lt;U+56FD&gt;</td>
-<td align="left"><a href="https://nominatim.openstreetmap.org/ui/mapicons//poi_boundary_administrative.p.20.png" class="uri">https://nominatim.openstreetmap.org/ui/mapicons//poi_boundary_administrative.p.20.png</a></td>
+<td align="left"><a
+href="https://nominatim.openstreetmap.org/ui/mapicons//poi_boundary_administrative.p.20.png"
+class="uri">https://nominatim.openstreetmap.org/ui/mapicons//poi_boundary_administrative.p.20.png</a></td>
 </tr>
 <tr class="even">
 <td align="left">Jordan</td>
 <td align="right">31.166705</td>
 <td align="right">36.941628</td>
-<td align="left">&lt;U+0627&gt;&lt;U+0644&gt;&lt;U+0623&gt;&lt;U+0631&gt;&lt;U+062F&gt;&lt;U+0646&gt;</td>
-<td align="left"><a href="https://nominatim.openstreetmap.org/ui/mapicons//poi_boundary_administrative.p.20.png" class="uri">https://nominatim.openstreetmap.org/ui/mapicons//poi_boundary_administrative.p.20.png</a></td>
+<td
+align="left">&lt;U+0627&gt;&lt;U+0644&gt;&lt;U+0623&gt;&lt;U+0631&gt;&lt;U+062F&gt;&lt;U+0646&gt;</td>
+<td align="left"><a
+href="https://nominatim.openstreetmap.org/ui/mapicons//poi_boundary_administrative.p.20.png"
+class="uri">https://nominatim.openstreetmap.org/ui/mapicons//poi_boundary_administrative.p.20.png</a></td>
 </tr>
 </tbody>
 </table>
 <div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>l <span class="ot">&lt;-</span> <span class="fu">map_leaflet</span>(<span class="at">.data =</span> data_tbl)</span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mapshot</span>(<span class="at">x =</span> l, <span class="at">file =</span> <span class="st">&quot;map.png&quot;</span>)</span></code></pre></div>
-<p><img src="map.png" alt="map of downloads" /> There was a total of 96 different countries that downloaded <code>healthyverse</code> packages in 2021.</p>
+<p><img src="map.png" alt="map of downloads" /> There was a total of 96
+different countries that downloaded <code>healthyverse</code> packages
+in 2021.</p>
 </div>
 <div id="github-stats" class="section level1">
 <h1>GitHub Stats</h1>
-<p>Now lets take a look at some quick stats from my <a href="https://www.github.com/spsanderson/">GitHub</a></p>
+<p>Now lets take a look at some quick stats from my <a
+href="https://www.github.com/spsanderson/">GitHub</a></p>
 <p>First my contribution grid:</p>
 <p><img src="logos/github_contributions_2021.JPG" width="98.0%" align="center" /></p>
 <p>Secondly my badge:</p>
