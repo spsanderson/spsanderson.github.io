@@ -15,11 +15,12 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-<img src="logos/healthyverse.png"  width="19.6%" align="center" />
-<img src="logos/healthyr.png"      width="19.6%" align="center" />
-<img src="logos/healthyr_data.png" width="19.6%" align="center" />
-<img src="logos/healthyr_ts.png"   width="19.6%" align="center" />
-<img src="logos/healthyr_ai.png"   width="19.6%" align="center" />
+<img src="logos/healthyverse.png"  width="16%" align="center" />
+<img src="logos/healthyr.png"      width="16%" align="center" />
+<img src="logos/healthyr_data.png" width="16%" align="center" />
+<img src="logos/healthyr_ts.png"   width="16%" align="center" />
+<img src="logos/healthyr_ai.png"   width="16%" align="center" />
+<img src="logos/tidy_density_logo.png" width="16%" align="center" />
 
 #
 > __healthyverse:__ Easily install and load all healthyR packages
