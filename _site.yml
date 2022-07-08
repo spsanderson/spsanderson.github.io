@@ -31,6 +31,8 @@ navbar:
       href: http://github.com/spsanderson
     - icon: fa-linkedin fa-lg
       href: https://www.linkedin.com/in/spsanderson/
+    - icon: fa-telegram fa-lg
+      href: https://t.me/steveondata/
 output:
   html_document:
     theme: flatly
