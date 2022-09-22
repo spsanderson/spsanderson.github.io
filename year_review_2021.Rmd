@@ -300,16 +300,23 @@ come from? Lets take a look.
 library(tmaptools)
 library(countrycode)
 library(mapview)
+library(htmlwidgets)
+library(webshot)
 
 mapping_dataset(.data_year = "2021") %>%
   head() %>%
   knitr::kable()
 
-l <- map_leaflet(.data = data_tbl)
-mapshot(x = l, file = "map.png")
+# l <- map_leaflet(.data = data_tbl)
+# mapshot(x = l, file = "map.png")
+
+l <- map_leaflet()
+saveWidget(l, "downloads_map.html")
+webshot("downloads_map.html", file = "map.png",
+        cliprect = "viewport")
 ```
 
-![map of downloads](map.png)
+<!-- ![map of downloads](map.png) -->
 There was a total of `r nrow(readRDS("00_data/mapping_dataset.rds"))` different 
 countries that downloaded `healthyverse` packages in 2021.
 
