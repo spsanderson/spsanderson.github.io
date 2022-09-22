@@ -14,7 +14,7 @@
 
 <title>My Personal Website</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -142,11 +142,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -317,6 +321,12 @@ $(document).ready(function () {
      
   </a>
 </li>
+<li>
+  <a href="https://twitter.com/steveondata">
+    <span class="fa fa-twitter fa-lg"></span>
+     
+  </a>
+</li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -336,17 +346,20 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">My Personal Website</h1>
 <h4 class="author">Steven P Sanderson II, MPH</h4>
-<h4 class="date">08 July, 2022</h4>
+<h4 class="date">21 September, 2022</h4>
 
 </div>
 
 <div id="TOC">
 <ul>
-<li><a href="#welcome">Welcome!</a></li>
-<li><a href="#package-stats-page">Package Stats Page</a></li>
-<li><a href="#package-time-series-analysis">Package Time Series
+<li><a href="#welcome" id="toc-welcome">Welcome!</a></li>
+<li><a href="#package-stats-page" id="toc-package-stats-page">Package
+Stats Page</a></li>
+<li><a href="#package-time-series-analysis"
+id="toc-package-time-series-analysis">Package Time Series
 Analysis</a></li>
-<li><a href="#github-stats-badge">GitHub Stats Badge</a></li>
+<li><a href="#github-stats-badge" id="toc-github-stats-badge">GitHub
+Stats Badge</a></li>
 </ul>
 </div>
 

@@ -33,6 +33,8 @@ navbar:
       href: https://www.linkedin.com/in/spsanderson/
     - icon: fa-telegram fa-lg
       href: https://t.me/steveondata/
+    - icon: fa-twitter fa-lg
+      href: https://twitter.com/steveondata
 output:
   html_document:
     theme: flatly
