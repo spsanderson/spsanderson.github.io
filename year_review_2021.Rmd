@@ -312,8 +312,7 @@ mapping_dataset(.data_year = "2021") %>%
 
 l <- map_leaflet()
 saveWidget(l, "downloads_map.html")
-webshot("downloads_map.html", file = "map.png",
-        cliprect = "viewport")
+try(webshot("downloads_map.html", file = "map.png", cliprect = "viewport"))
 ```
 
 <!-- ![map of downloads](map.png) -->

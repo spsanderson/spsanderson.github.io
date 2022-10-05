@@ -437,6 +437,12 @@ $(document).ready(function () {
      
   </a>
 </li>
+<li>
+  <a href="https://www.spsanderson.com/steveondata">
+    <span class="fa fa-book fa-lg"></span>
+     
+  </a>
+</li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -456,7 +462,7 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">A Review of 2021</h1>
 <h4 class="author">Steven P Sanderson II, MPH</h4>
-<h4 class="date">21 September, 2022</h4>
+<h4 class="date">05 October, 2022</h4>
 
 </div>
 
@@ -1018,9 +1024,9 @@ class="uri">https://nominatim.openstreetmap.org/ui/mapicons//poi_boundary_admini
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>l <span class="ot">&lt;-</span> <span class="fu">map_leaflet</span>()</span>
 <span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="fu">saveWidget</span>(l, <span class="st">&quot;downloads_map.html&quot;</span>)</span>
-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="fu">webshot</span>(<span class="st">&quot;downloads_map.html&quot;</span>, <span class="at">file =</span> <span class="st">&quot;map.png&quot;</span>,</span>
-<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">cliprect =</span> <span class="st">&quot;viewport&quot;</span>)</span></code></pre></div>
-<p><img src="man/figures/README-mapping-1.png" width="1152" /></p>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="fu">try</span>(<span class="fu">webshot</span>(<span class="st">&quot;downloads_map.html&quot;</span>, <span class="at">file =</span> <span class="st">&quot;map.png&quot;</span>, <span class="at">cliprect =</span> <span class="st">&quot;viewport&quot;</span>))</span></code></pre></div>
+<pre><code>## Error in webshot(&quot;downloads_map.html&quot;, file = &quot;map.png&quot;, cliprect = &quot;viewport&quot;) : 
+##   webshot.js returned failure value: -1073741819</code></pre>
 <!-- ![map of downloads](map.png) -->
 <p>There was a total of 96 different countries that downloaded
 <code>healthyverse</code> packages in 2021.</p>
