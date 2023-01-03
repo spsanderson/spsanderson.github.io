@@ -14,7 +14,7 @@
 
 <title>A Review of 2021</title>
 
-<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.19/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
@@ -289,8 +289,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -298,16 +298,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -403,6 +396,9 @@ $(document).ready(function () {
     <li>
       <a href="year_review_2021.html">2021</a>
     </li>
+    <li>
+      <a href="year_review_2022.html">2022</a>
+    </li>
   </ul>
 </li>
       </ul>
@@ -462,7 +458,7 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">A Review of 2021</h1>
 <h4 class="author">Steven P Sanderson II, MPH</h4>
-<h4 class="date">05 October, 2022</h4>
+<h4 class="date">03 January, 2023</h4>
 
 </div>
 
@@ -1025,10 +1021,9 @@ class="uri">https://nominatim.openstreetmap.org/ui/mapicons//poi_boundary_admini
 <span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>l <span class="ot">&lt;-</span> <span class="fu">map_leaflet</span>()</span>
 <span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="fu">saveWidget</span>(l, <span class="st">&quot;downloads_map.html&quot;</span>)</span>
 <span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="fu">try</span>(<span class="fu">webshot</span>(<span class="st">&quot;downloads_map.html&quot;</span>, <span class="at">file =</span> <span class="st">&quot;map.png&quot;</span>, <span class="at">cliprect =</span> <span class="st">&quot;viewport&quot;</span>))</span></code></pre></div>
-<pre><code>## Error in webshot(&quot;downloads_map.html&quot;, file = &quot;map.png&quot;, cliprect = &quot;viewport&quot;) : 
-##   webshot.js returned failure value: -1073741819</code></pre>
+<p><img src="man/figures/README-mapping-1.png" width="1152" /></p>
 <!-- ![map of downloads](map.png) -->
-<p>There was a total of 96 different countries that downloaded
+<p>There was a total of 121 different countries that downloaded
 <code>healthyverse</code> packages in 2021.</p>
 </div>
 <div id="github-stats" class="section level1">
