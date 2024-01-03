@@ -134,7 +134,7 @@ total_number_of_releases <- data_tbl %>%
   
 ```
 
-So all in all there was a total of `r nrow(data_tbl) %>% scales::number(big.mark=",")` downloads of all the `healthyverse` packages in 2021. There were in total `r total_number_of_releases` package releases as well.
+So all in all there was a total of `r nrow(data_tbl) %>% scales::number(big.mark=",")` downloads of all the `healthyverse` packages in 2022. There were in total `r total_number_of_releases` package releases as well.
 
 # Graphs
 Now lets graph the data out!

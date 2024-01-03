@@ -28,6 +28,8 @@ navbar:
           href: year_review_2021.html
         - text: "2022"
           href: year_review_2022.html
+        - text: "2023"
+          href: year_review_2023.html
   right:
     - icon: fa-envelope fa-lg
       href: mailto:<spsanderson@gmail.com>
