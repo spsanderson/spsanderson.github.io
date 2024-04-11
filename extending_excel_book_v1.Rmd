@@ -11,7 +11,7 @@ output:
       in_header: GA_Script.html
 ---
 
-I have worked with David Kun of the ownR platform on a book called [Extending Excel with Python and R](https://www.amazon.com/dp/1804610690/ref=tsm_1_fb_lk). With this book you will learn how to eamlessly integrate the Python and R programming languages with spreadsheet-based data analysis to maximize productivity.
+I have worked with David Kun of the ownR platform on a book called [Extending Excel with Python and R](https://packt.link/oTyZJ). With this book you will learn how to eamlessly integrate the Python and R programming languages with spreadsheet-based data analysis to maximize productivity.
 
 # Key Features
 
