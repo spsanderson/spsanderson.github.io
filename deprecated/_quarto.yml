@@ -1,0 +1,61 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  twitter-card:
+    creator:  "@steveondata"
+    site: "@steveondata"
+  site-url: "https://www.spsanderson.com"
+  open-graph: true
+  google-analytics: "G-QW2ZT6KK9V"
+  title: "Steven P. Sanderson II, MPH"
+  navbar:
+    left:
+      - text: "Home"
+        href: index.html
+      - text: "Software"
+        menu:
+          - text: "healthyverse"
+            href: software.html
+          - text: "healthyR"
+            href: healthyr.html
+          - text: "healthyR.data"
+            href: healthyrdata.html
+          - text: "healthyR.ts"
+            href: healthyrts.html
+          - text: "healthyR.ai"
+            href: healthyrai.html
+          - text: "TidyDensity"
+            href: tidydensity.html
+          - text: "tidyAML"
+            href: tidyaml.html
+      - text: "Years in Review"
+        menu:
+          - text: "2021"
+            href: year_review_2021.html
+          - text: "2022"
+            href: year_review_2022.html
+          - text: "2023"
+            href: year_review_2023.html
+      - text: "Books"
+        menu:
+          - text: "Extending Excel with Python and R"
+            href: extending_excel_book_v1.html
+    right:
+      - icon: fa-envelope fa-lg
+        href: mailto:<spsanderson@gmail.com>
+      - icon: fa-github fa-lg
+        href: http://github.com/spsanderson
+      - icon: fa-linkedin fa-lg
+        href: https://www.linkedin.com/in/spsanderson/
+      - icon: fa-telegram fa-lg
+        href: https://t.me/steveondata/
+      - icon: fa-book fa-lg
+        href: https://www.spsanderson.com/steveondata
+format:
+  html:
+    theme:
+      dark: darkly
+    css: styles.css
+editor: visual

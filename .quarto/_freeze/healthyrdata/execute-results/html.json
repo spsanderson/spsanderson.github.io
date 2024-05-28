@@ -1,0 +1,15 @@
+{
+  "hash": "be6d21b2039edebef2009fd04aa10c3f",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"healthyR.data\"\nauthor: \"Steven P Sanderson II, MPH\"\ndate: \"2024-05-28\"\noutput:\n  html:\n    #code_folding: hide\n    highlight: tango\n    toc: no\n    toc-depth: 2\n    includes:\n      in_header: GA_Script.html\n---\n\n\n\n\n<img src=\"logos/healthyr_data.png\" width=\"19.6%\" align=\"center\"/>\n\n<!-- badges: start -->\n\n[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/healthyR.data)](https://cran.r-project.org/package=healthyR.data) ![](http://cranlogs.r-pkg.org/badges/healthyR.data) ![](http://cranlogs.r-pkg.org/badges/grand-total/healthyR.data) [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html##stable) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)\n\n<!-- badges: end -->\n\nPurpose\n\nThe `healthyR.data` package provides a useful simulated data-set that can be used for all sorts of data analysis, including time-series and machine learning.\n\n`healthyR.data` can be found [here](https://www.spsanderson.com/healthyR.data)\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

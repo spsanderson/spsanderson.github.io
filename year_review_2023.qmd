@@ -1,12 +1,13 @@
 ---
 title: "A Review of 2023"
 author: "Steven P Sanderson II, MPH"
-date: "`r format(Sys.time(), '%d %B, %Y')`"
+date: "2024-05-28"
 output:
-  html_document:
-    code_folding: show
+  html:
+    #code_folding: hide
     highlight: tango
     toc: no
+    toc-depth: 2
     includes:
       in_header: GA_Script.html
 ---
@@ -22,13 +23,11 @@ knitr::opts_chunk$set(
   )
 ```
 
-#
-> __2023__ A Year in Review
+# 
 
-The year 2023 was a big year for me. I did a lot of coding, a lot more than I 
-typically do. The biggest push came personally in my ongoing development of my
-R packages that are in the [healthyverse](www.spsanderson.com/healthyverse/). To
-use the __healthyverse__ simply do so in the familiar fashion:
+> **2023** A Year in Review
+
+The year 2023 was a big year for me. I did a lot of coding, a lot more than I typically do. The biggest push came personally in my ongoing development of my R packages that are in the [healthyverse](www.spsanderson.com/healthyverse/). To use the **healthyverse** simply do so in the familiar fashion:
 
 ```{r install_healthyverse, echo=TRUE, eval=FALSE}
 install.packages("healthyverse")
@@ -45,13 +44,10 @@ Here are links to all of the packages:
 -   [`healthyverse`](https://www.spsanderson.com/healthyverse/)
 -   [`tidyAML`](https://www.spsanderson.com/tidyAML/)
 
-In order to start looking at some of the data that pertains to 2023 lets first
-get the data from the CRAN logs. Since I do this daily already, I can simply use
-the rds file I already have. I am going to go through the motions though, in case
-others might want to do something similar. The functions I am using to get the 
-data can [be found here](https://github.com/spsanderson/healthyverse_tsa/blob/master/00_scripts/get_data_functions.R)
+In order to start looking at some of the data that pertains to 2023 lets first get the data from the CRAN logs. Since I do this daily already, I can simply use the rds file I already have. I am going to go through the motions though, in case others might want to do something similar. The functions I am using to get the data can [be found here](https://github.com/spsanderson/healthyverse_tsa/blob/master/00_scripts/get_data_functions.R)
 
 Now lets get that data!
+
 ```{r get_data}
 library(tidyverse)
 library(lubridate)
@@ -64,8 +60,7 @@ get_package_release_data()
 csv_to_rds()
 ```
 
-Ok now that we have our data, lets ensure that we are only using the year 2023.
-We can do this by filtering out data by time with the [timetk](https://business-science.github.io/timetk/) package. 
+Ok now that we have our data, lets ensure that we are only using the year 2023. We can do this by filtering out data by time with the [timetk](https://business-science.github.io/timetk/) package.
 
 Now lets filter our data below, some pre-processing may need to take place.
 
@@ -81,13 +76,11 @@ data_tbl <- downloads_processed_tbl() %>%
 glimpse(data_tbl)
 ```
 
-Now that we have our data, we have it for the year 2023 only with a start date
-of `r min(data_tbl$date)` and an end date of `r max(data_tbl$date)`.
+Now that we have our data, we have it for the year 2023 only with a start date of `r min(data_tbl$date)` and an end date of `r max(data_tbl$date)`.
 
 # Package Information
 
-The first thing we will do is look at how many downloads there were for each pacakge
-and it's version.
+The first thing we will do is look at how many downloads there were for each pacakge and it's version.
 
 ```{r dl_by_pkg_v}
 library(knitr)
@@ -138,6 +131,7 @@ total_number_of_releases <- data_tbl %>%
 So all in all there was a total of `r nrow(data_tbl) %>% scales::number(big.mark=",")` downloads of all the `healthyverse` packages in 2023. There were in total `r total_number_of_releases` package releases as well.
 
 # Graphs
+
 Now lets graph the data out!
 
 ```{r gaph_of_downloads}
@@ -198,6 +192,7 @@ data_tbl %>%
 ```
 
 # Time Series Graphs
+
 Now lets get some time-series graphs.
 
 ```{r ts_plots}
@@ -289,8 +284,7 @@ data_tbl %>%
 
 # Mapping
 
-So now that we have seen all the downloads in variaous ways, where did they all
-come from? Lets take a look.
+So now that we have seen all the downloads in variaous ways, where did they all come from? Lets take a look.
 
 ```{r mapping}
 library(tmaptools)
@@ -309,6 +303,5 @@ try(webshot("downloads_map.html", file = "map.png", cliprect = "viewport"))
 ```
 
 <!-- ![map of downloads](map.png) -->
-There was a total of `r nrow(readRDS("00_data/mapping_dataset.rds"))` different 
-countries that downloaded `healthyverse` packages in 2023.
 
+There was a total of `r nrow(readRDS("00_data/mapping_dataset.rds"))` different countries that downloaded `healthyverse` packages in 2023.

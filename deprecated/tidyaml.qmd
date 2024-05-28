@@ -1,0 +1,38 @@
+---
+title: "tidyAML"
+author: "Steven P Sanderson II, MPH"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html:
+    #code_folding: hide
+    highlight: tango
+    toc: no
+    toc-depth: 2
+    includes:
+      in_header: GA_Script.html
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<img src="logos/tidyaml.png"   width="19.6%" align="center" />
+
+#
+> __tidyAML:__ A toolkit for autoML and tidymodels generation
+
+<!-- badges: start -->
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/tidyAML)](https://cran.r-project.org/package=tidyAML)
+![](https://cranlogs.r-pkg.org/badges/tidyAML)
+![](https://cranlogs.r-pkg.org/badges/grand-total/tidyAML)
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com)
+<!-- badges: end -->
+
+Purpose
+
+The goal of tidyAML is to provide a consistent verb framework for generating,
+visualizing, and analyzing automated models built inside of the `tidymodels`
+ecosystem.
+
+`tidyAML` can be found [here](https://www.spsanderson.com/tidyAML)

@@ -1,0 +1,58 @@
+---
+title: "Extending Excel with Python and R"
+author: "Steven P Sanderson II, MPH"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html:
+    #code_folding: hide
+    highlight: tango
+    toc: no
+    includes:
+      in_header: GA_Script.html
+---
+
+I have worked with David Kun of the ownR platform on a book called [Extending Excel with Python and R](https://packt.link/oTyZJ). With this book you will learn how to eamlessly integrate the Python and R programming languages with spreadsheet-based data analysis to maximize productivity.
+
+# Key Features
+
+*    Perform advanced data analysis and visualization techniques with R and Python on Excel data
+*    Use exploratory data analysis and pivot table analysis for deeper insights into your data
+*    Integrate R and Python code directly into Excel using VBA or API endpoints
+*    Purchase of the print or Kindle book includes a free PDF eBook
+
+# Book Description
+
+For businesses, data analysis and visualization are crucial for informed decision-making; however, Excel’s limitations can make these tasks time-consuming and challenging. Extending Excel with Python and R is a game changer resource written by experts Steven Sanderson, the author of the healthyverse suite of R packages, and David Kun, co-founder of Functional Analytics, the company behind the ownR platform engineering solution for R, Python, and other data science languages.
+
+This comprehensive guide transforms the way you work with spreadsheet-based data by integrating Python and R with Excel to automate tasks, execute statistical analysis, and create powerful visualizations. Working through the chapters, you’ll find out how to perform exploratory data analysis, time series analysis, and even integrate APIs for maximum efficiency. Whether you're a beginner or an expert, this book has everything you need to unlock Excel's full potential and take your data analysis skills to the next level.
+
+By the end of this book, you’ll be able to import data from Excel, manipulate it in R or Python, and perform the data analysis tasks in your preferred framework while pushing the results back to Excel for sharing with others as needed.
+
+What you will learn
+
+*    Read and write Excel files with R and Python libraries
+*    Automate Excel tasks with R and Python scripts
+*    Use R and Python to execute Excel VBA macros
+*    Format Excel sheets using R and Python packages
+*    Create graphs with ggplot2 and Matplotlib in Excel
+*    Analyze Excel data with statistical methods and time series analysis
+*    Explore various methods to call R and Python functions from Excel
+
+# Who this book is for
+
+If you’re a data analyst or data scientist, or a quants, actuaries, or data practitioner looking to enhance your Excel skills and expand your data analysis capabilities with R and Python, this book is for you. It provides a comprehensive introduction to the topics covered, making it suitable for both beginners and intermediate learners. A basic understanding of Excel, Python, and R is all you need to get started.
+
+Table of Contents
+
+*    Reading Excel Spreadsheets
+*    Writing Excel Spreadsheets
+*    Executing VBA Code from R and Python
+*    Automating Further (Email Notifications and More)
+*    Formatting Your Excel sheet
+*    Inserting ggplot2/matplotlib Graphs
+*    Pivot Tables (tidyquant in R and with win32com and pypiwin32 in Python)/Summary Table {gt}
+*    Exploratory Data Analysis with R and Python
+*    Statistical Analysis: Linear and Logistic Regression
+*    Time Series Analysis: Statistics, Plots, and Forecasting
+*    Calling R/Python Locally from Excel Directly or via an API
+*    Data Analysis and Visualization with R and Python for Excel Data – A Case Study

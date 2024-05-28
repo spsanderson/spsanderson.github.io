@@ -1,0 +1,15 @@
+{
+  "hash": "2d58c73143be553f63359ad612128f54",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"healthyR.ai\"\nauthor: \"Steven P Sanderson II, MPH\"\ndate: \"2024-05-28\"\noutput:\n  html:\n    #code_folding: hide\n    highlight: tango\n    toc: no\n    toc-depth: 2\n    includes:\n      in_header: GA_Script.html\n---\n\n\n\n\n<img src=\"logos/healthyr_ai.png\" width=\"19.6%\" align=\"center\"/>\n\n<!-- badges: start -->\n\n[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/healthyR.ai)](https://cran.r-project.org/package=healthyR.ai) ![](https://cranlogs.r-pkg.org/badges/healthyR.ai) ![](https://cranlogs.r-pkg.org/badges/grand-total/healthyR.ai) [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)\n\n<!-- badges: end -->\n\nPurpose\n\nThe gola of healthyR.ai is to provide a consistent verb framework for performing data modeling and forecasting for problems like classification and regression on both administrative and clinical hospital data.\n\n`healthyR.ai` can be found [here](https://www.spsanderson.com/healthyR.ai)\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

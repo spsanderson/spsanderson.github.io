@@ -1,0 +1,15 @@
+{
+  "hash": "dc511d7022fc5c704c6f8a2241c14044",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"tidyAML\"\nauthor: \"Steven P Sanderson II, MPH\"\ndate: \"2024-05-28\"\noutput:\n  html:\n    #code_folding: hide\n    highlight: tango\n    toc: no\n    toc-depth: 2\n    includes:\n      in_header: GA_Script.html\n---\n\n\n\n\n<img src=\"logos/tidyaml.png\" width=\"19.6%\" align=\"center\"/>\n\n<!-- badges: start -->\n\n[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/tidyAML)](https://cran.r-project.org/package=tidyAML) ![](https://cranlogs.r-pkg.org/badges/tidyAML) ![](https://cranlogs.r-pkg.org/badges/grand-total/tidyAML) [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com)\n\n<!-- badges: end -->\n\nPurpose\n\nThe goal of tidyAML is to provide a consistent verb framework for generating, visualizing, and analyzing automated models built inside of the `tidymodels` ecosystem.\n\n`tidyAML` can be found [here](https://www.spsanderson.com/tidyAML)\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

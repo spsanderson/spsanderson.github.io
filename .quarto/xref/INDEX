@@ -1,0 +1,41 @@
+{
+  "about.qmd": {
+    "about.html": "90f99935"
+  },
+  "index.qmd": {
+    "index.html": "94bac688"
+  },
+  "extending_excel_book_v1.qmd": {
+    "extending_excel_book_v1.html": "0e0188ee"
+  },
+  "healthyr.qmd": {
+    "healthyr.html": "e0a654e4"
+  },
+  "healthyrai.qmd": {
+    "healthyrai.html": "e8bb554a"
+  },
+  "healthyrdata.qmd": {
+    "healthyrdata.html": "a9c1019f"
+  },
+  "healthyrts.qmd": {
+    "healthyrts.html": "e54885dc"
+  },
+  "software.qmd": {
+    "software.html": "43d10418"
+  },
+  "tidyaml.qmd": {
+    "tidyaml.html": "dd0a438b"
+  },
+  "tidydensity.qmd": {
+    "tidydensity.html": "12e8ee23"
+  },
+  "year_review_2021.qmd": {
+    "year_review_2021.html": "fd3babe9"
+  },
+  "year_review_2022.qmd": {
+    "year_review_2022.html": "bf694e3f"
+  },
+  "year_review_2023.qmd": {
+    "year_review_2023.html": "70b7d771"
+  }
+}

@@ -1,0 +1,27 @@
+---
+title: "About Me"
+image: linkedin_profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/spsanderson
+    - icon: github
+      text: Github
+      href: https://github.com/spsanderson
+    - icon: rss
+      href: https://www.spsanderson.com/steveondata/index.xml
+    - icon: rss
+      href: http://feeds.feedburner.com/RBloggers
+    - icon: briefcase
+      href: https://www.r-users.com/
+---
+
+Hello! I'm Steven Paul Sanderson II, MPH, a professional with a Master of Public Health degree, specializing in areas related to health information systems management and data science. I work as a Manager of Applications at Stony Brook Medicine in the Patient Accounts Department. In this role, I oversees the implementation and management of software applications that support the department's operations and patient accounts management.
+
+In addition to my professional responsibilities, I am an active developer in the R programming community. I maintain several R packages, including: `healthyR`, `healthyR.ts`, `healthyR.ai`, `healthyR.data`, `TidyDensity`, `tidyAML` and `healthyverse`.
+
+These packages are geared towards data analysis, time series forecasting, artificial intelligence applications, data management, density estimation, and automated machine learning, reflecting his expertise in coding and data science.
+
+I am also passionate about continuous learning and professional development, with goals to pursue an additional master's degrees in health information systems management. My interests span computers, coding, movies, and music.

@@ -1,0 +1,29 @@
+---
+title: "Steven P. Sanderson II, MPH"
+author: "Steven P. Sanderson II, MPH"
+date: "2024-05-28"
+output:
+  html:
+    hightlight: textmate
+    toc: tru
+    toc-depth: 2
+    theme: readable
+---
+
+# Book(s)
+
+[Here is an Amazon Link to my book Extending Excel with Python and R](https://packt.link/oTyZJ)
+
+All of my projects [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+# Package Stats Page
+
+Click [here](https://www.spsanderson.com/package-downloads/) for package stats.
+
+# Package Time Series Analysis
+
+Click [here](https://www.spsanderson.com/healthyverse_tsa/)
+
+# GitHub Stats Badge
+
+![Steven P. Sanderson II, MPH](https://github-readme-stats.vercel.app/api?username=spsanderson&show_icons=true)

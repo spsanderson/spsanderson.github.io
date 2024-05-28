@@ -1,0 +1,69 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  site-url: https://www.spsanderson.com/
+  open-graph: true
+  google-analytics: "G-QW2ZT6KK9V"
+  title: "Steven P. Sanderson II, MPH"
+  
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - text: "Books"
+        menu:
+          - text: "Extending Excel with Python and R"
+            href: extending_excel_book_v1.qmd
+      - text: "Software"
+        menu:
+        - text: "healthyverse"
+          href: software.qmd
+        - text: "healthyR"
+          href: healthyr.qmd
+        - text: "healthyR.data"
+          href: healthyrdata.qmd
+        - text: "healthyR.ts"
+          href: healthyrts.qmd
+        - text: "healthyR.ai"
+          href: healthyrai.qmd
+        - text: "TidyDensity"
+          href: tidydensity.qmd
+        - text: "tidyAML"
+          href: tidyaml.qmd
+      - text: "Years in Review"
+        menu:
+          - text: "2021"
+            href: year_review_2021.qmd
+          - text: "2022"
+            href: year_review_2022.qmd
+          - text: "2023"
+            href: year_review_2023.qmd
+      - text: "Blog"
+        href: "https://www.spsanderson.com/steveondata/"
+    right:
+      - icon: github
+        href: https://github.com/spsanderson
+      - icon: telegram
+        href: https://t.me/steveondata
+      - icon: rss
+        href: http://feeds.feedburner.com/RBloggers
+      - icon: rss
+        href: index.xml
+      - icon: book
+        href: https://www.r-bloggers.com/
+      - icon: briefcase
+        href: https://www.r-users.com/
+
+format:
+  html:
+    theme:
+      dark: darkly
+    css: styles.css
+    toc: true
+    toc-depth: 2
+
+editor: visual
+

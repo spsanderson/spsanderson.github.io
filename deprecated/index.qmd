@@ -1,0 +1,35 @@
+---
+title: "My Personal Website"
+author: "Steven P Sanderson II, MPH"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output:
+  html:
+    #code_folding: hide
+    highlight: tango
+    toc: no
+    toc-depth: 2
+    includes:
+      in_header: GA_Script.html
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Welcome!
+
+> __This site built with R__
+
+# Book(s)
+[Here is an Amazon Link to my book Extending Excel with Python and R](https://packt.link/oTyZJ)
+
+All of my projects [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+
+# Package Stats Page
+Click [here](https://www.spsanderson.com/package-downloads/) for package stats.
+
+# Package Time Series Analysis
+Click [here](https://www.spsanderson.com/healthyverse_tsa/)
+
+# GitHub Stats Badge
+![Steven P. Sanderson II, MPH](https://github-readme-stats.vercel.app/api?username=spsanderson&show_icons=true)
