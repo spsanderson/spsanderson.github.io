@@ -1,0 +1,20 @@
+"0","install.packages(""healthyverse"")"
+"2","trying URL 'http://cran.rstudio.com/bin/windows/contrib/4.2/healthyverse_1.0.2.zip'
+"
+"2","Content type 'application/zip'"
+"2"," length 87717 bytes (85 KB)
+"
+"2","downloaded 85 KB
+
+"
+"1","package ‘healthyverse’ successfully unpacked and MD5 sums checked
+"
+"1","
+"
+"1",""
+"1","The downloaded binary packages are in
+	C:\Users\steve\AppData\Local\Temp\RtmpqmvPxN\downloaded_packages"
+"1",""
+"1","
+"
+"0","library(healthyverse)"

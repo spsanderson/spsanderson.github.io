@@ -1,0 +1,24 @@
+"0","library(tmaptools)"
+"0","library(countrycode)"
+"0","library(mapview)"
+"0","library(htmlwidgets)"
+"0","library(webshot)"
+"0",""
+"0","mapping_dataset(.data_year = ""2023"") %>%"
+"0","  head() %>%"
+"0","  knitr::kable()"
+"1","[1m[33mError[39m in `purrr::map()`:[22m
+[38;5;252m[36mℹ[38;5;252m In index: 1.[39m
+[1mCaused by error in `download.file()`:[22m
+[33m![39m cannot open URL 'https://nominatim.openstreetmap.org/search?q=Curaçao&format=xml&polygon=0&addressdetails=0'
+Backtrace:
+[90m  1. [39mmapping_dataset(.data_year = ""2023"") %>% head() %>% knitr::kable()
+[90m 10. [39m[1m[94mpurrr::map([39m[22m...[1m[94m)[39m[22m
+[90m 11. [39mpurrr:::map_(""list"", .x, .f, ..., .progress = .progress)
+[90m 15. [39m.f(.x[[i]], ...)
+[90m 16. [39m[1mtmaptools[22m::geocode_OSM(...)
+[90m       at ]8;line = 32:col = 21;file://C:\Users\steve\Documents\GitHub\spsanderson.github.io\01_scripts\mapping_functions.R01_scripts/mapping_functions.R:32:21]8;;[39m
+[90m 17. [39m[1mbase[22m::lapply(...)
+[90m 18. [39m[1mtmaptools[22m (local) FUN(X[[i]], ...)
+[90m 21. [39m[1mutils[22m::download.file(...)
+"
