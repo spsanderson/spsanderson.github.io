@@ -37,5 +37,44 @@
   },
   "year_review_2023.qmd": {
     "year_review_2023.html": "70b7d771"
+  },
+  "year_review_2024.qmd": {
+    "year_review_2024.html": "c91e7fec"
+  },
+  "deprecated/extending_excel_book_v1.qmd": {
+    "extending_excel_book_v1.html": "046c77a2"
+  },
+  "deprecated/healthyr.qmd": {
+    "healthyr.html": "72419fec"
+  },
+  "deprecated/healthyrai.qmd": {
+    "healthyrai.html": "be9d4c50"
+  },
+  "deprecated/healthyrdata.qmd": {
+    "healthyrdata.html": "e217ed70"
+  },
+  "deprecated/healthyrts.qmd": {
+    "healthyrts.html": "6f5b1539"
+  },
+  "deprecated/index.qmd": {
+    "index.html": "e8f89a5f"
+  },
+  "deprecated/software.qmd": {
+    "software.html": "e9a1fbb3"
+  },
+  "deprecated/tidyaml.qmd": {
+    "tidyaml.html": "d1457987"
+  },
+  "deprecated/tidydensity.qmd": {
+    "tidydensity.html": "c0f4f75e"
+  },
+  "deprecated/year_review_2021.qmd": {
+    "year_review_2021.html": "989e9408"
+  },
+  "deprecated/year_review_2022.qmd": {
+    "year_review_2022.html": "9d7182da"
+  },
+  "deprecated/year_review_2023.qmd": {
+    "year_review_2023.html": "f6fcd592"
   }
 }
