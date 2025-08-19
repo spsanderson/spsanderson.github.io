@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.6.42">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -71,12 +71,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-d4be639c637f3db3c684c66cefad7e0c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-ae2d0dcda2edce4ab590422bb373b64f.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -118,7 +118,10 @@ gtag('config', 'G-QW2ZT6KK9V', { 'anonymize_ip': true});
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="A Review of 2024 – Steven P. Sanderson II, MPH">
 <meta property="og:description" content="">
+<meta property="og:image" content="https://www.spsanderson.com/man/figures/README-gaph_of_downloads-1.png">
 <meta property="og:site_name" content="Steven P. Sanderson II, MPH">
+<meta property="og:image:height" content="1920">
+<meta property="og:image:width" content="2304">
 </head>
 
 <body class="nav-fixed">
@@ -189,6 +192,10 @@ gtag('config', 'G-QW2ZT6KK9V', { 'anonymize_ip': true});
         <li>
     <a class="dropdown-item" href="./tidyaml.html">
  <span class="dropdown-text">tidyAML</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./randomwalker.html">
+ <span class="dropdown-text">RandomWalker</span></a>
   </li>  
     </ul>
   </li>
@@ -357,7 +364,7 @@ gtag('config', 'G-QW2ZT6KK9V', { 'anonymize_ip': true});
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(data_tbl)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Rows: 39,040
+<pre><code>Rows: 39,108
 Columns: 11
 $ date      &lt;date&gt; 2024-01-01, 2024-01-01, 2024-01-01, 2024-01-01, 2024-01-01,…
 $ time      &lt;Period&gt; 15H 9M 37S, 1M 5S, 1M 5S, 1M 19S, 1M 19S, 7H 40M 59S, 5H …
@@ -372,7 +379,7 @@ $ country   &lt;chr&gt; NA, "JP", "JP", "JP", "JP", "US", "KR", "KR", "KR", "KR"
 $ ip_id     &lt;int&gt; 2, 6074, 6074, 6074, 6074, 3446, 11, 11, 11, 11, 9833, 2, 22…</code></pre>
 </div>
 </div>
-<p>Now that we have our data, we have it for the year 2024 only with a start date of 2024-01-01 and an end date of 2024-12-29.</p>
+<p>Now that we have our data, we have it for the year 2024 only with a start date of 2024-01-01 and an end date of 2024-12-31.</p>
 </section>
 <section id="package-information" class="level1">
 <h1>Package Information</h1>
@@ -466,7 +473,7 @@ $ ip_id     &lt;int&gt; 2, 6074, 6074, 6074, 6074, 3446, 11, 11, 11, 11, 9833, 2
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">2050</td>
+<td style="text-align: right;">2051</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -525,7 +532,7 @@ $ ip_id     &lt;int&gt; 2, 6074, 6074, 6074, 6074, 3446, 11, 11, 11, 11, 9833, 2
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">2236</td>
+<td style="text-align: right;">2238</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">0.0.6</td>
@@ -576,7 +583,7 @@ $ ip_id     &lt;int&gt; 2, 6074, 6074, 6074, 6074, 3446, 11, 11, 11, 11, 9833, 2
 <td style="text-align: right;">389</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">126</td>
-<td style="text-align: right;">828</td>
+<td style="text-align: right;">840</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">130</td>
 <td style="text-align: right;">0</td>
@@ -683,7 +690,7 @@ $ ip_id     &lt;int&gt; 2, 6074, 6074, 6074, 6074, 3446, 11, 11, 11, 11, 9833, 2
 </tr>
 <tr class="odd">
 <td style="text-align: left;">0.2.0</td>
-<td style="text-align: right;">1106</td>
+<td style="text-align: right;">1112</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">138</td>
 <td style="text-align: right;">0</td>
@@ -740,7 +747,7 @@ $ ip_id     &lt;int&gt; 2, 6074, 6074, 6074, 6074, 3446, 11, 11, 11, 11, 9833, 2
 <td style="text-align: left;">0.2.2</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">1564</td>
+<td style="text-align: right;">1574</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">124</td>
@@ -864,7 +871,7 @@ $ ip_id     &lt;int&gt; 2, 6074, 6074, 6074, 6074, 3446, 11, 11, 11, 11, 9833, 2
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">683</td>
+<td style="text-align: right;">693</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 </tr>
@@ -920,7 +927,7 @@ $ ip_id     &lt;int&gt; 2, 6074, 6074, 6074, 6074, 3446, 11, 11, 11, 11, 9833, 2
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">1901</td>
+<td style="text-align: right;">1902</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="odd">
@@ -931,7 +938,7 @@ $ ip_id     &lt;int&gt; 2, 6074, 6074, 6074, 6074, 3446, 11, 11, 11, 11, 9833, 2
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">571</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">680</td>
+<td style="text-align: right;">690</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
@@ -940,7 +947,7 @@ $ ip_id     &lt;int&gt; 2, 6074, 6074, 6074, 6074, 3446, 11, 11, 11, 11, 9833, 2
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">1107</td>
+<td style="text-align: right;">1112</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1058,7 +1065,7 @@ $ ip_id     &lt;int&gt; 2, 6074, 6074, 6074, 6074, 3446, 11, 11, 11, 11, 9833, 2
 <tr class="odd">
 <td style="text-align: left;">1.5.0</td>
 <td style="text-align: right;">0</td>
-<td style="text-align: right;">2724</td>
+<td style="text-align: right;">2735</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0</td>
@@ -1098,35 +1105,35 @@ $ ip_id     &lt;int&gt; 2, 6074, 6074, 6074, 6074, 3446, 11, 11, 11, 11, 9833, 2
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">RandomWalker</td>
-<td style="text-align: right;">1495</td>
+<td style="text-align: right;">1501</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">TidyDensity</td>
-<td style="text-align: right;">8117</td>
+<td style="text-align: right;">8128</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">healthyR</td>
-<td style="text-align: right;">5526</td>
+<td style="text-align: right;">5536</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">healthyR.ai</td>
-<td style="text-align: right;">5132</td>
+<td style="text-align: right;">5145</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">healthyR.data</td>
-<td style="text-align: right;">4552</td>
+<td style="text-align: right;">4557</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">healthyR.ts</td>
-<td style="text-align: right;">7358</td>
+<td style="text-align: right;">7368</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">healthyverse</td>
-<td style="text-align: right;">3170</td>
+<td style="text-align: right;">3181</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">tidyAML</td>
-<td style="text-align: right;">3690</td>
+<td style="text-align: right;">3692</td>
 </tr>
 </tbody>
 </table>
@@ -1195,7 +1202,7 @@ $ ip_id     &lt;int&gt; 2, 6074, 6074, 6074, 6074, 3446, 11, 11, 11, 11, 9833, 2
 <span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>() <span class="sc">%&gt;%</span></span>
 <span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">total =</span> <span class="fu">sum</span>(release_count, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>So all in all there was a total of 39,040 downloads of all the <code>healthyverse</code> packages in 2024. There were in total 90 package releases as well.</p>
+<p>So all in all there was a total of 39,108 downloads of all the <code>healthyverse</code> packages in 2024. There were in total 90 package releases as well.</p>
 </section>
 <section id="graphs" class="level1">
 <h1>Graphs</h1>
@@ -1655,8 +1662,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -1767,7 +1772,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
-      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
