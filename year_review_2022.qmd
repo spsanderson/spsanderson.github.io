@@ -36,12 +36,12 @@ library(healthyverse)
 
 Here are links to all of the packages:
 
--   [`healthyR`](https://www.spsanderson.com/healthyR/)
--   [`healthyR.data`](https://www.spsanderson.com/healthyR.data/)
--   [`healthyR.ts`](https://www.spsanderson.com/healthyR.ts/)
--   [`healthyR.ai`](https://www.spsanderson.com/healthyR.ai/)
--   [`TidyDensity`](https://www.spsanderson.com/TidyDensity/)
--   [`healthyverse`](https://www.spsanderson.com/healthyverse/)
+- [`healthyR`](https://www.spsanderson.com/healthyR/)
+- [`healthyR.data`](https://www.spsanderson.com/healthyR.data/)
+- [`healthyR.ts`](https://www.spsanderson.com/healthyR.ts/)
+- [`healthyR.ai`](https://www.spsanderson.com/healthyR.ai/)
+- [`TidyDensity`](https://www.spsanderson.com/TidyDensity/)
+- [`healthyverse`](https://www.spsanderson.com/healthyverse/)
 
 In order to start looking at some of the data that pertains to 2022 lets first get the data from the CRAN logs. Since I do this daily already, I can simply use the rds file I already have. I am going to go through the motions though, in case others might want to do something similar. The functions I am using to get the data can [be found here](https://github.com/spsanderson/healthyverse_tsa/blob/master/00_scripts/get_data_functions.R)
 
@@ -112,7 +112,7 @@ data_tbl %>%
   ungroup() %>%
   select(package, release_count) %>%
   distinct() %>%
-  set_names("Package", "Number of Releases") %>%
+  set_names("Package", "Number of Release Downloads") %>%
   kable()
 
 total_number_of_releases <- data_tbl %>%
