@@ -63,8 +63,8 @@ website:
 
 format:
   html:
-    theme:
-      dark: darkly
+    #theme:
+    #  dark: darkly
     css: styles.css
     toc: true
     toc-depth: 2
