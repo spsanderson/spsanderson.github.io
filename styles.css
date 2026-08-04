@@ -1,1 +1,176 @@
-/* css styles */
+/* =====================================================
+   spsanderson.github.io — shared stylesheet
+   (based on r_package_marketing/styles.css)
+   ===================================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-bg:        #f8f9fa;
+  --color-surface:   #ffffff;
+  --color-primary:   #2c6fad;
+  --color-primary-d: #1a4f82;
+  --color-accent:    #28a745;
+  --color-text:      #212529;
+  --color-muted:     #6c757d;
+  --color-border:    #dee2e6;
+  --radius:          8px;
+  --shadow:          0 2px 8px rgba(0,0,0,.10);
+  --max-width:       1100px;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+/* ---- Header ---- */
+header {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 2.5rem 1rem 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #fff;
+  margin-top: .5rem;
+}
+
+/* ---- Main layout ---- */
+main {
+  max-width: var(--max-width);
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* ---- Section headings ---- */
+section h2 {
+  font-size: 1.6rem;
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-border);
+  padding-bottom: .4rem;
+  margin-bottom: 1.4rem;
+}
+
+/* ---- Package grid ---- */
+.pkg-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.4rem;
+  margin-bottom: 3rem;
+}
+
+.pkg-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.4rem 1.6rem;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.pkg-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,.13);
+}
+
+.pkg-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: .4rem;
+}
+
+.pkg-card h3 a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.pkg-card h3 a:hover {
+  text-decoration: underline;
+}
+
+.pkg-card p {
+  font-size: .95rem;
+  color: var(--color-muted);
+  margin-bottom: .8rem;
+}
+
+.badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+}
+
+.badge-row a img {
+  height: 20px;
+}
+
+/* ---- Footer ---- */
+footer {
+  background: var(--color-primary-d);
+  color: rgba(255,255,255,.8);
+  text-align: center;
+  padding: 1.4rem 1rem;
+  font-size: .9rem;
+}
+
+footer a {
+  color: #fff;
+}
+
+.page-links {
+  margin-bottom: 2rem;
+}
+
+.page-links a,
+.feature-card a {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.page-links a:hover,
+.feature-card a:hover {
+  text-decoration: underline;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.feature-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.4rem 1.6rem;
+}
+
+.feature-card h3 {
+  color: var(--color-primary);
+  margin-bottom: .6rem;
+}
+
+.feature-card p + p {
+  margin-top: 1rem;
+}
+
+.hero-card {
+  margin-bottom: 2rem;
+}
