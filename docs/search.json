@@ -74,7 +74,7 @@
     "href": "deprecated/software.html",
     "title": "My Packages",
     "section": "",
-    "text": "healthyverse: Easily install and load all healthyR packages\n\n\n     \nPurpose\nThe intent of this library is to make it easy to install and update to the latets version of all of the healthyR packages.\nhealthyverse can be found here"
+    "text": "healthyverse: Easily install and load all healthyR packages\n\n\n     \nPurpose\nThe intent of this library is to make it easy to install and update to the latest version of all of the healthyR packages.\nhealthyverse can be found here"
   },
   {
     "objectID": "deprecated/healthyrts.html",
@@ -172,7 +172,7 @@
     "href": "software.html",
     "title": "My Packages",
     "section": "",
-    "text": "Purpose\nThe intent of this library is to make it easy to install and update to the latets version of all of the healthyR packages.\nhealthyverse can be found here"
+    "text": "For guidance on promoting R packages and growing adoption, visit R package marketing resources.\n\n    \n\nPurpose\nThe intent of this library is to make it easy to install and update to the latest version of all of the healthyR packages.\nhealthyverse can be found here"
   },
   {
     "objectID": "tidydensity.html",

@@ -2,6 +2,7 @@
 title: "Steven P. Sanderson II, MPH"
 author: "Steven P. Sanderson II, MPH"
 date: "2024-05-28"
+description: "Steven P. Sanderson II shares R package projects, data science resources, and practical guidance for R package marketing."
 output:
   html:
     hightlight: textmate
@@ -9,6 +10,10 @@ output:
     toc-depth: 2
     theme: readable
 ---
+
+# R package marketing
+
+Looking for practical guidance on promoting an R package? Visit [R package marketing resources](https://www.spsanderson.com/r_package_marketing/) for examples, tips, and strategy.
 
 # Book(s)
 
